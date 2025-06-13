@@ -3,7 +3,7 @@ timescale 1ns / 1ps
 module alu (
     input  wire [7:0] a,        // Operand A
     input  wire [7:0] b,        // Operand B
-    input  wire [2:0] alu_op,   // Operation seç
+    input  wire [2:0] alu_op,   // Operation choose
     output reg  [7:0] result,   // ALU operation result
     output wire       zero      // Zero flag
 );

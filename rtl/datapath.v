@@ -5,7 +5,7 @@ module datapath (
     input  wire mem_write,
     input  wire alu_src,
     input  wire pc_write,
-    input  wire imm_signed,         // New control: 1 = signed immediate, 0 = unsigned
+    input  wire imm_signed,         //1 = signed immediate, 0 = unsigned
     input  wire [2:0] alu_op,
     input  wire mem_to_reg,
     output wire [7:0] instruction_out,

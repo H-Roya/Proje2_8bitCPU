@@ -8,7 +8,7 @@ module control (
     output reg        pc_write,
     output reg [2:0]  alu_op,
     output reg        mem_to_reg,
-    output reg        imm_signed     // NEW: 1 = signed immediate, 0 = unsigned
+    output reg        imm_signed     //1 = signed immediate, 0 = unsigned
 );
 
     wire [3:0] opcode = instruction[7:4];

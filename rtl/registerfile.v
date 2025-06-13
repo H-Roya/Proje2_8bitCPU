@@ -48,7 +48,7 @@ module register_file (
         pc_out = pc;
     end
 
-    // Debugging: Monitor register writes and PC updates
+    // Debugging: monitor register writes and PC updates
     always @(posedge clk) begin
         if (write_enable)
             $display("[%t] REG WRITE: R%0d = %h", $time, write_addr, write_data);

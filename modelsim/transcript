@@ -1,27 +1,189 @@
-# Compile of top_tb.v was successful.
-# Compile of alu.v failed with 2 errors.
-# Compile of control.v was successful.
-# Compile of datapath.v was successful.
-# Compile of memory.v was successful.
-# Compile of registerfile.v was successful.
-# Compile of top.v was successful.
-# 7 compiles, 1 failed with 2 errors.
-# Compile of top_tb.v was successful.
-# Compile of alu.v failed with 2 errors.
-# Compile of control.v was successful.
-# Compile of datapath.v was successful.
-# Compile of memory.v was successful.
-# Compile of registerfile.v was successful.
-# Compile of top.v was successful.
-# 7 compiles, 1 failed with 2 errors.
-# Compile of top_tb.v was successful.
-# Compile of alu.v failed with 2 errors.
-# Compile of control.v was successful.
-# Compile of datapath.v was successful.
-# Compile of memory.v was successful.
-# Compile of registerfile.v was successful.
-# Compile of top.v was successful.
-# 7 compiles, 1 failed with 2 errors.
+vsim -gui work.top_tb
+# vsim -gui work.top_tb 
+# Start time: 22:46:07 on Jun 14,2025
+# Loading work.top_tb
+# Loading work.top
+# Loading work.datapath
+# Loading work.register_file
+# Loading work.memory
+# Loading work.alu
+# Loading work.control
+add wave -position insertpoint sim:/top_tb/*
+run -all
+# CTRL: op=0111 alu_op=000 reg_write=1 imm_signed=0
+# [               30000] REG WRITE: R0 = 01
+# [               30000] PC = 00
+# [               50000] REG WRITE: R0 = 01
+# [               50000] PC = 00
+# [               70000] REG WRITE: R0 = 01
+# [               70000] PC = 00
+# [               90000] REG WRITE: R0 = 01
+# [               90000] PC = 00
+# [              110000] REG WRITE: R0 = 01
+# [              110000] PC = 00
+# T=110000 | PC=00 | Instr=71 | LEDs=0001
+# REGS: R0=00 R1=00 R2=00 R3=00
+# [              130000] REG WRITE: R0 = 02
+# [              130000] PC = 01
+# T=130000 | PC=01 | Instr=71 | LEDs=0010
+# REGS: R0=01 R1=00 R2=00 R3=00
+# [              150000] REG WRITE: R1 = 05
+# [              150000] PC = 02
+# T=150000 | PC=02 | Instr=75 | LEDs=0101
+# REGS: R0=02 R1=00 R2=00 R3=00
+# [              170000] REG WRITE: R2 = 0a
+# [              170000] PC = 03
+# T=170000 | PC=03 | Instr=7a | LEDs=1010
+# REGS: R0=02 R1=05 R2=00 R3=00
+# CTRL: op=0001 alu_op=000 reg_write=1 imm_signed=0
+# [              190000] REG WRITE: R2 = 14
+# [              190000] PC = 04
+# T=190000 | PC=04 | Instr=1a | LEDs=0100
+# REGS: R0=02 R1=05 R2=0a R3=00
+# CTRL: op=0101 alu_op=000 reg_write=1 imm_signed=1
+# [              210000] REG WRITE: R0 = xx
+# [              210000] PC = 05
+# T=210000 | PC=05 | Instr=53 | LEDs=0101
+# REGS: R0=02 R1=05 R2=14 R3=00
+# CTRL: op=0110 alu_op=000 reg_write=0 imm_signed=1
+# [              230000] PC = 06
+# T=230000 | PC=06 | Instr=6f | LEDs=1111
+# REGS: R0=xx R1=05 R2=14 R3=00
+# CTRL: op=xxxx alu_op=000 reg_write=0 imm_signed=0
+# [              250000] PC = 07
+# T=250000 | PC=07 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              270000] PC = 08
+# T=270000 | PC=08 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              290000] PC = 09
+# T=290000 | PC=09 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              310000] PC = 0a
+# T=310000 | PC=0a | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              330000] PC = 0b
+# T=330000 | PC=0b | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              350000] PC = 0c
+# T=350000 | PC=0c | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              370000] PC = 0d
+# T=370000 | PC=0d | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              390000] PC = 0e
+# T=390000 | PC=0e | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              410000] PC = 0f
+# T=410000 | PC=0f | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              430000] PC = 10
+# T=430000 | PC=10 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              450000] PC = 11
+# T=450000 | PC=11 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              470000] PC = 12
+# T=470000 | PC=12 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              490000] PC = 13
+# T=490000 | PC=13 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              510000] PC = 14
+# T=510000 | PC=14 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              530000] PC = 15
+# T=530000 | PC=15 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              550000] PC = 16
+# T=550000 | PC=16 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              570000] PC = 17
+# T=570000 | PC=17 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              590000] PC = 18
+# T=590000 | PC=18 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              610000] PC = 19
+# T=610000 | PC=19 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              630000] PC = 1a
+# T=630000 | PC=1a | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              650000] PC = 1b
+# T=650000 | PC=1b | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              670000] PC = 1c
+# T=670000 | PC=1c | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              690000] PC = 1d
+# T=690000 | PC=1d | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              710000] PC = 1e
+# T=710000 | PC=1e | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              730000] PC = 1f
+# T=730000 | PC=1f | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              750000] PC = 20
+# T=750000 | PC=20 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              770000] PC = 21
+# T=770000 | PC=21 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              790000] PC = 22
+# T=790000 | PC=22 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              810000] PC = 23
+# T=810000 | PC=23 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              830000] PC = 24
+# T=830000 | PC=24 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              850000] PC = 25
+# T=850000 | PC=25 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              870000] PC = 26
+# T=870000 | PC=26 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              890000] PC = 27
+# T=890000 | PC=27 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              910000] PC = 28
+# T=910000 | PC=28 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              930000] PC = 29
+# T=930000 | PC=29 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              950000] PC = 2a
+# T=950000 | PC=2a | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              970000] PC = 2b
+# T=970000 | PC=2b | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              990000] PC = 2c
+# T=990000 | PC=2c | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [             1010000] PC = 2d
+# T=1010000 | PC=2d | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [             1030000] PC = 2e
+# T=1030000 | PC=2e | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [             1050000] PC = 2f
+# T=1050000 | PC=2f | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [             1070000] PC = 30
+# T=1070000 | PC=30 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [             1090000] PC = 31
+# T=1090000 | PC=31 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# ❌ TEST FAILED! Final LED output: xxxx
+# ** Note: $finish    : C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v(40)
+#    Time: 1100 ns  Iteration: 0  Instance: /top_tb
+# 1
+# Break in Module top_tb at C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v line 40
 # Compile of top_tb.v was successful.
 # Compile of alu.v was successful.
 # Compile of control.v was successful.
@@ -31,8 +193,10 @@
 # Compile of top.v was successful.
 # 7 compiles, 0 failed with no errors.
 vsim -gui work.top_tb
+# End time: 22:48:15 on Jun 14,2025, Elapsed time: 0:02:08
+# Errors: 0, Warnings: 2
 # vsim -gui work.top_tb 
-# Start time: 22:05:37 on Jun 14,2025
+# Start time: 22:48:15 on Jun 14,2025
 # Loading work.top_tb
 # Loading work.top
 # Loading work.datapath
@@ -40,105 +204,379 @@ vsim -gui work.top_tb
 # Loading work.memory
 # Loading work.alu
 # Loading work.control
-add wave -r
-# Missing signal name or pattern.
 add wave -position insertpoint sim:/top_tb/*
-run 1000ns
-# ** Warning: (vsim-7) Failed to open readmem file "sim/program.hex" in read mode.
-# No such file or directory. (errno = ENOENT)    : C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/memory.v(20)
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath/u_instr_mem
-# ** Warning: (vsim-7) Failed to open readmem file "sim/program.hex" in read mode.
-# No such file or directory. (errno = ENOENT)    : C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/memory.v(20)
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath/u_data_mem
-# T=110000 | PC=00 | Instr=xx | LEDs=xxxx
+run -all
+# CTRL: op=0111 alu_op=000 reg_write=1 imm_signed=0
+# [               30000] REG WRITE: R0 = 01
+# [               30000] PC = 00
+# [               50000] REG WRITE: R0 = 01
+# [               50000] PC = 00
+# [               70000] REG WRITE: R0 = 01
+# [               70000] PC = 00
+# [               90000] REG WRITE: R0 = 01
+# [               90000] PC = 00
+# [              110000] REG WRITE: R0 = 01
+# [              110000] PC = 00
+# T=110000 | PC=00 | Instr=71 | LEDs=0001
 # REGS: R0=00 R1=00 R2=00 R3=00
-# T=130000 | PC=00 | Instr=xx | LEDs=xxxx
+# [              130000] REG WRITE: R0 = 02
+# [              130000] PC = 01
+# T=130000 | PC=01 | Instr=71 | LEDs=0010
+# REGS: R0=01 R1=00 R2=00 R3=00
+# [              150000] REG WRITE: R1 = 05
+# [              150000] PC = 02
+# T=150000 | PC=02 | Instr=75 | LEDs=0101
+# REGS: R0=02 R1=00 R2=00 R3=00
+# [              170000] REG WRITE: R2 = 0a
+# [              170000] PC = 03
+# T=170000 | PC=03 | Instr=7a | LEDs=1010
+# REGS: R0=02 R1=05 R2=00 R3=00
+# CTRL: op=0001 alu_op=000 reg_write=1 imm_signed=0
+# [              190000] REG WRITE: R2 = 14
+# [              190000] PC = 04
+# T=190000 | PC=04 | Instr=1a | LEDs=0100
+# REGS: R0=02 R1=05 R2=0a R3=00
+# CTRL: op=0101 alu_op=000 reg_write=1 imm_signed=1
+# [              210000] REG WRITE: R0 = xx
+# [              210000] PC = 05
+# T=210000 | PC=05 | Instr=53 | LEDs=0101
+# REGS: R0=02 R1=05 R2=14 R3=00
+# CTRL: op=0110 alu_op=000 reg_write=0 imm_signed=1
+# [              230000] PC = 06
+# T=230000 | PC=06 | Instr=6f | LEDs=1111
+# REGS: R0=xx R1=05 R2=14 R3=00
+# CTRL: op=xxxx alu_op=000 reg_write=0 imm_signed=0
+# [              250000] PC = 07
+# T=250000 | PC=07 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              270000] PC = 08
+# T=270000 | PC=08 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              290000] PC = 09
+# T=290000 | PC=09 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              310000] PC = 0a
+# T=310000 | PC=0a | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              330000] PC = 0b
+# T=330000 | PC=0b | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              350000] PC = 0c
+# T=350000 | PC=0c | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              370000] PC = 0d
+# T=370000 | PC=0d | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              390000] PC = 0e
+# T=390000 | PC=0e | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              410000] PC = 0f
+# T=410000 | PC=0f | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              430000] PC = 10
+# T=430000 | PC=10 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              450000] PC = 11
+# T=450000 | PC=11 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              470000] PC = 12
+# T=470000 | PC=12 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              490000] PC = 13
+# T=490000 | PC=13 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              510000] PC = 14
+# T=510000 | PC=14 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              530000] PC = 15
+# T=530000 | PC=15 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              550000] PC = 16
+# T=550000 | PC=16 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              570000] PC = 17
+# T=570000 | PC=17 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              590000] PC = 18
+# T=590000 | PC=18 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              610000] PC = 19
+# T=610000 | PC=19 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              630000] PC = 1a
+# T=630000 | PC=1a | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              650000] PC = 1b
+# T=650000 | PC=1b | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              670000] PC = 1c
+# T=670000 | PC=1c | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              690000] PC = 1d
+# T=690000 | PC=1d | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              710000] PC = 1e
+# T=710000 | PC=1e | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              730000] PC = 1f
+# T=730000 | PC=1f | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              750000] PC = 20
+# T=750000 | PC=20 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              770000] PC = 21
+# T=770000 | PC=21 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              790000] PC = 22
+# T=790000 | PC=22 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              810000] PC = 23
+# T=810000 | PC=23 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              830000] PC = 24
+# T=830000 | PC=24 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              850000] PC = 25
+# T=850000 | PC=25 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              870000] PC = 26
+# T=870000 | PC=26 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              890000] PC = 27
+# T=890000 | PC=27 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              910000] PC = 28
+# T=910000 | PC=28 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              930000] PC = 29
+# T=930000 | PC=29 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              950000] PC = 2a
+# T=950000 | PC=2a | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              970000] PC = 2b
+# T=970000 | PC=2b | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              990000] PC = 2c
+# T=990000 | PC=2c | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [             1010000] PC = 2d
+# T=1010000 | PC=2d | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [             1030000] PC = 2e
+# T=1030000 | PC=2e | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [             1050000] PC = 2f
+# T=1050000 | PC=2f | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [             1070000] PC = 30
+# T=1070000 | PC=30 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [             1090000] PC = 31
+# T=1090000 | PC=31 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# ❌ TEST FAILED! Final LED output: xxxx
+# ** Note: $finish    : C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v(40)
+#    Time: 1100 ns  Iteration: 0  Instance: /top_tb
+# 1
+# Break in Module top_tb at C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v line 40
+# Compile of top_tb.v was successful.
+# Compile of alu.v was successful.
+# Compile of control.v was successful.
+# Compile of datapath.v was successful.
+# Compile of memory.v was successful.
+# Compile of registerfile.v was successful.
+# Compile of top.v was successful.
+# 7 compiles, 0 failed with no errors.
+vsim -gui work.top_tb
+# End time: 22:52:39 on Jun 14,2025, Elapsed time: 0:04:24
+# Errors: 0, Warnings: 2
+# vsim -gui work.top_tb 
+# Start time: 22:52:39 on Jun 14,2025
+# Loading work.top_tb
+# Loading work.top
+# Loading work.datapath
+# Loading work.register_file
+# Loading work.memory
+# Loading work.alu
+# Loading work.control
+add wave -position insertpoint sim:/top_tb/*
+run -all
+# CTRL: op=0111 alu_op=000 reg_write=1 imm_signed=0
+# [               30000] REG WRITE: R0 = 01
+# [               30000] PC = 00
+# [               50000] REG WRITE: R0 = 01
+# [               50000] PC = 00
+# [               70000] REG WRITE: R0 = 01
+# [               70000] PC = 00
+# [               90000] REG WRITE: R0 = 01
+# [               90000] PC = 00
+# [              110000] REG WRITE: R0 = 01
+# [              110000] PC = 00
+# T=110000 | PC=00 | Instr=71 | LEDs=0001
 # REGS: R0=00 R1=00 R2=00 R3=00
-# T=150000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=170000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=190000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=210000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=230000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=250000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=270000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=290000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=310000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=330000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=350000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=370000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=390000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=410000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=430000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=450000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=470000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=490000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=510000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=530000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=550000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=570000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=590000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=610000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=630000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=650000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=670000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=690000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=710000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=730000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=750000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=770000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=790000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=810000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=830000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=850000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=870000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=890000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=910000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=930000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=950000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=970000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# T=990000 | PC=00 | Instr=xx | LEDs=xxxx
-# REGS: R0=00 R1=00 R2=00 R3=00
-# End time: 22:08:32 on Jun 14,2025, Elapsed time: 0:02:55
-# Errors: 0, Warnings: 11
+# [              130000] REG WRITE: R0 = 02
+# [              130000] PC = 01
+# T=130000 | PC=01 | Instr=71 | LEDs=0010
+# REGS: R0=01 R1=00 R2=00 R3=00
+# [              150000] REG WRITE: R1 = 05
+# [              150000] PC = 02
+# T=150000 | PC=02 | Instr=75 | LEDs=0101
+# REGS: R0=02 R1=00 R2=00 R3=00
+# [              170000] REG WRITE: R2 = 0a
+# [              170000] PC = 03
+# T=170000 | PC=03 | Instr=7a | LEDs=1010
+# REGS: R0=02 R1=05 R2=00 R3=00
+# CTRL: op=0001 alu_op=000 reg_write=1 imm_signed=0
+# [              190000] REG WRITE: R2 = 14
+# [              190000] PC = 04
+# T=190000 | PC=04 | Instr=1a | LEDs=0100
+# REGS: R0=02 R1=05 R2=0a R3=00
+# CTRL: op=0101 alu_op=000 reg_write=1 imm_signed=1
+# [              210000] REG WRITE: R0 = xx
+# [              210000] PC = 05
+# T=210000 | PC=05 | Instr=53 | LEDs=0101
+# REGS: R0=02 R1=05 R2=14 R3=00
+# CTRL: op=0110 alu_op=000 reg_write=0 imm_signed=1
+# [              230000] PC = 06
+# T=230000 | PC=06 | Instr=6f | LEDs=1111
+# REGS: R0=xx R1=05 R2=14 R3=00
+# CTRL: op=1111 alu_op=000 reg_write=0 imm_signed=0
+# [              250000] PC = 07
+# T=250000 | PC=07 | Instr=ff | LEDs=0000
+# REGS: R0=xx R1=05 R2=14 R3=00
+# CTRL: op=0000 alu_op=000 reg_write=0 imm_signed=0
+# [              270000] PC = 08
+# T=270000 | PC=08 | Instr=00 | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              290000] PC = 09
+# T=290000 | PC=09 | Instr=00 | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              310000] PC = 0a
+# T=310000 | PC=0a | Instr=00 | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# CTRL: op=xxxx alu_op=000 reg_write=0 imm_signed=0
+# [              330000] PC = 0b
+# T=330000 | PC=0b | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              350000] PC = 0c
+# T=350000 | PC=0c | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              370000] PC = 0d
+# T=370000 | PC=0d | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              390000] PC = 0e
+# T=390000 | PC=0e | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              410000] PC = 0f
+# T=410000 | PC=0f | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              430000] PC = 10
+# T=430000 | PC=10 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              450000] PC = 11
+# T=450000 | PC=11 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              470000] PC = 12
+# T=470000 | PC=12 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              490000] PC = 13
+# T=490000 | PC=13 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              510000] PC = 14
+# T=510000 | PC=14 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              530000] PC = 15
+# T=530000 | PC=15 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              550000] PC = 16
+# T=550000 | PC=16 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              570000] PC = 17
+# T=570000 | PC=17 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              590000] PC = 18
+# T=590000 | PC=18 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              610000] PC = 19
+# T=610000 | PC=19 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              630000] PC = 1a
+# T=630000 | PC=1a | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              650000] PC = 1b
+# T=650000 | PC=1b | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              670000] PC = 1c
+# T=670000 | PC=1c | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              690000] PC = 1d
+# T=690000 | PC=1d | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              710000] PC = 1e
+# T=710000 | PC=1e | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              730000] PC = 1f
+# T=730000 | PC=1f | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              750000] PC = 20
+# T=750000 | PC=20 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              770000] PC = 21
+# T=770000 | PC=21 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              790000] PC = 22
+# T=790000 | PC=22 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              810000] PC = 23
+# T=810000 | PC=23 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              830000] PC = 24
+# T=830000 | PC=24 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              850000] PC = 25
+# T=850000 | PC=25 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              870000] PC = 26
+# T=870000 | PC=26 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              890000] PC = 27
+# T=890000 | PC=27 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              910000] PC = 28
+# T=910000 | PC=28 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              930000] PC = 29
+# T=930000 | PC=29 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              950000] PC = 2a
+# T=950000 | PC=2a | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              970000] PC = 2b
+# T=970000 | PC=2b | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [              990000] PC = 2c
+# T=990000 | PC=2c | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [             1010000] PC = 2d
+# T=1010000 | PC=2d | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [             1030000] PC = 2e
+# T=1030000 | PC=2e | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [             1050000] PC = 2f
+# T=1050000 | PC=2f | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [             1070000] PC = 30
+# T=1070000 | PC=30 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# [             1090000] PC = 31
+# T=1090000 | PC=31 | Instr=xx | LEDs=xxxx
+# REGS: R0=xx R1=05 R2=14 R3=00
+# ❌ TEST FAILED! Final LED output: xxxx
+# ** Note: $finish    : C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v(40)
+#    Time: 1100 ns  Iteration: 0  Instance: /top_tb
+# 1
+# Break in Module top_tb at C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v line 40
+# End time: 22:54:22 on Jun 14,2025, Elapsed time: 0:01:43
+# Errors: 0, Warnings: 1

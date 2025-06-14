@@ -1,6 +1,11 @@
-71
-75
-7A
-1A
-53
-6F
+71  // PC=00: ld R0, 1
+75  // PC=01: ld R1, 5
+7A  // PC=02: ld R2, 10
+1A  // PC=03: add R2 = R0 + R1
+53  // PC=04: (your op)
+6F  // PC=05: (your op)
+FF  // PC=06: HALT (if you have halt logic)
+00  // PC=07: NOP
+00  // PC=08: NOP
+00  // PC=09: NOP
+

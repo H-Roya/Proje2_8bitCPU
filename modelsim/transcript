@@ -1,0 +1,144 @@
+# Compile of top_tb.v was successful.
+# Compile of alu.v failed with 2 errors.
+# Compile of control.v was successful.
+# Compile of datapath.v was successful.
+# Compile of memory.v was successful.
+# Compile of registerfile.v was successful.
+# Compile of top.v was successful.
+# 7 compiles, 1 failed with 2 errors.
+# Compile of top_tb.v was successful.
+# Compile of alu.v failed with 2 errors.
+# Compile of control.v was successful.
+# Compile of datapath.v was successful.
+# Compile of memory.v was successful.
+# Compile of registerfile.v was successful.
+# Compile of top.v was successful.
+# 7 compiles, 1 failed with 2 errors.
+# Compile of top_tb.v was successful.
+# Compile of alu.v failed with 2 errors.
+# Compile of control.v was successful.
+# Compile of datapath.v was successful.
+# Compile of memory.v was successful.
+# Compile of registerfile.v was successful.
+# Compile of top.v was successful.
+# 7 compiles, 1 failed with 2 errors.
+# Compile of top_tb.v was successful.
+# Compile of alu.v was successful.
+# Compile of control.v was successful.
+# Compile of datapath.v was successful.
+# Compile of memory.v was successful.
+# Compile of registerfile.v was successful.
+# Compile of top.v was successful.
+# 7 compiles, 0 failed with no errors.
+vsim -gui work.top_tb
+# vsim -gui work.top_tb 
+# Start time: 22:05:37 on Jun 14,2025
+# Loading work.top_tb
+# Loading work.top
+# Loading work.datapath
+# Loading work.register_file
+# Loading work.memory
+# Loading work.alu
+# Loading work.control
+add wave -r
+# Missing signal name or pattern.
+add wave -position insertpoint sim:/top_tb/*
+run 1000ns
+# ** Warning: (vsim-7) Failed to open readmem file "sim/program.hex" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/memory.v(20)
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath/u_instr_mem
+# ** Warning: (vsim-7) Failed to open readmem file "sim/program.hex" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/memory.v(20)
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath/u_data_mem
+# T=110000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=130000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=150000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=170000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=190000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=210000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=230000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=250000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=270000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=290000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=310000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=330000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=350000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=370000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=390000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=410000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=430000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=450000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=470000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=490000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=510000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=530000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=550000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=570000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=590000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=610000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=630000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=650000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=670000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=690000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=710000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=730000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=750000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=770000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=790000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=810000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=830000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=850000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=870000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=890000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=910000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=930000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=950000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=970000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# T=990000 | PC=00 | Instr=xx | LEDs=xxxx
+# REGS: R0=00 R1=00 R2=00 R3=00
+# End time: 22:08:32 on Jun 14,2025, Elapsed time: 0:02:55
+# Errors: 0, Warnings: 11

@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+timescale 1ns / 1ps
 
 module alu (
     input  wire [7:0] a,        // Operand A

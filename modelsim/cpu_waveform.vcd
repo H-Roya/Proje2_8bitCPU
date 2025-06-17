@@ -1,5 +1,5 @@
 $date
-	Sat Jun 14 22:52:51 2025
+	Tue Jun 17 12:52:29 2025
 $end
 $version
 	ModelSim Version 2020.1
@@ -218,6 +218,7 @@ $var wire 1 M! write_data [2] $end
 $var wire 1 N! write_data [1] $end
 $var wire 1 O! write_data [0] $end
 $var reg 8 P! read_data [7:0] $end
+$var integer 32 Q! i $end
 $upscope $end
 
 $scope module u_alu $end
@@ -240,8 +241,8 @@ $var wire 1 #! b [0] $end
 $var wire 1 ? alu_op [2] $end
 $var wire 1 @ alu_op [1] $end
 $var wire 1 A alu_op [0] $end
-$var reg 8 Q! result [7:0] $end
-$var wire 1 R! zero $end
+$var reg 8 R! result [7:0] $end
+$var wire 1 S! zero $end
 $upscope $end
 
 $scope module u_data_mem $end
@@ -263,7 +264,8 @@ $var wire 1 ^ write_data [3] $end
 $var wire 1 _ write_data [2] $end
 $var wire 1 ` write_data [1] $end
 $var wire 1 a write_data [0] $end
-$var reg 8 S! read_data [7:0] $end
+$var reg 8 T! read_data [7:0] $end
+$var integer 32 U! i $end
 $upscope $end
 $upscope $end
 
@@ -276,21 +278,21 @@ $var wire 1 5 instruction [3] $end
 $var wire 1 6 instruction [2] $end
 $var wire 1 7 instruction [1] $end
 $var wire 1 8 instruction [0] $end
-$var reg 1 T! reg_write $end
-$var reg 1 U! mem_write $end
-$var reg 1 V! alu_src $end
-$var reg 1 W! pc_write $end
-$var reg 3 X! alu_op [2:0] $end
-$var reg 1 Y! mem_to_reg $end
-$var reg 1 Z! imm_signed $end
-$var wire 1 [! opcode [3] $end
-$var wire 1 \! opcode [2] $end
-$var wire 1 ]! opcode [1] $end
-$var wire 1 ^! opcode [0] $end
-$var wire 1 _! operand [3] $end
-$var wire 1 `! operand [2] $end
-$var wire 1 a! operand [1] $end
-$var wire 1 b! operand [0] $end
+$var reg 1 V! reg_write $end
+$var reg 1 W! mem_write $end
+$var reg 1 X! alu_src $end
+$var reg 1 Y! pc_write $end
+$var reg 3 Z! alu_op [2:0] $end
+$var reg 1 [! mem_to_reg $end
+$var reg 1 \! imm_signed $end
+$var wire 1 ]! opcode [3] $end
+$var wire 1 ^! opcode [2] $end
+$var wire 1 _! opcode [1] $end
+$var wire 1 `! opcode [0] $end
+$var wire 1 a! operand [3] $end
+$var wire 1 b! operand [2] $end
+$var wire 1 c! operand [1] $end
+$var wire 1 d! operand [0] $end
 $upscope $end
 $upscope $end
 $upscope $end
@@ -304,16 +306,18 @@ bx C!
 b0 D!
 b0 E!
 bx P!
-bx Q!
-bx S!
-xT!
-xU!
+bx R!
+bx T!
 xV!
 xW!
-bx X!
+xX!
 xY!
-xZ!
+bx Z!
+x[!
+x\!
 b100 F!
+b100000000 Q!
+b100000000 U!
 x&
 x%
 x$
@@ -437,14 +441,14 @@ x=!
 x<!
 x;!
 x:!
-x^!
-x]!
-x\!
-x[!
-xb!
-xa!
 x`!
 x_!
+x^!
+x]!
+xd!
+xc!
+xb!
+xa!
 1(
 0'
 0O!
@@ -456,7 +460,7 @@ x_!
 0I!
 0H!
 0G!
-xR!
+xS!
 $end
 #10000
 1!
@@ -493,10 +497,10 @@ b1110001 P!
 13
 12
 01
-1b!
+1d!
+0c!
+0b!
 0a!
-0`!
-0_!
 19!
 08!
 07!
@@ -509,25 +513,25 @@ b1110001 P!
 0<!
 0;!
 0:!
+1`!
+1_!
 1^!
-1]!
-1\!
-0[!
+0]!
 0+!
 0*!
 1-!
 0,!
 b0 B!
 b0 C!
-0T!
-0U!
 0V!
-1W!
-b0 X!
-0Y!
-0Z!
-1T!
+0W!
+0X!
+1Y!
+b0 Z!
+0[!
+0\!
 1V!
+1X!
 0a
 0`
 0_
@@ -561,8 +565,8 @@ b0 X!
 0T
 0S
 0R
-b1 Q!
-0R!
+b1 R!
+0S!
 1i
 0h
 0g
@@ -602,7 +606,7 @@ b1 F!
 b10 F!
 b11 F!
 b100 F!
-b1110101 S!
+b1110101 T!
 1q
 0p
 1o
@@ -657,7 +661,7 @@ b1 B!
 b1 D!
 1I
 1Y
-b10 Q!
+b10 R!
 0i
 1h
 0y
@@ -674,7 +678,7 @@ b10 Q!
 1'
 b10 E!
 b1110101 P!
-b1111010 S!
+b1111010 T!
 0q
 1p
 0o
@@ -683,12 +687,12 @@ b1111010 S!
 1)!
 1/!
 16
-1`!
+1b!
 17!
 1?!
 1!!
 1+!
-b110 Q!
+b110 R!
 b0 B!
 b10 D!
 0I
@@ -698,7 +702,7 @@ b10 D!
 1.
 1$
 0Y
-b101 Q!
+b101 R!
 1i
 0h
 1y
@@ -715,10 +719,12 @@ b101 Q!
 1'
 b11 E!
 b1111010 P!
-b1101111 S!
-1q
-1o
+b0 T!
+0p
+0n
 0m
+0l
+0k
 0Q
 1P
 0O
@@ -733,10 +739,10 @@ b1101111 S!
 17
 06
 15
+0d!
+1c!
 0b!
 1a!
-0`!
-1_!
 09!
 18!
 07!
@@ -757,7 +763,7 @@ b1101111 S!
 1*!
 0-!
 1,!
-b1010 Q!
+b1010 R!
 b11 D!
 1I
 0i
@@ -784,26 +790,17 @@ b11 D!
 1'
 b100 E!
 b11010 P!
-bx S!
-xq
-xp
-xo
-xn
-xm
-xl
-xk
-xj
 0L
 0K
 0&!
 0%!
 03
 02
-0]!
-0\!
-0T!
+0_!
+0^!
 0V!
-1T!
+0X!
+1V!
 b1010 B!
 b1010 C!
 b100 D!
@@ -815,7 +812,7 @@ b100 D!
 1^
 1X
 1V
-b10100 Q!
+b10100 R!
 0h
 1g
 0f
@@ -838,61 +835,55 @@ b10100 Q!
 1!
 1'
 b101 E!
-b1010011 P!
+b11111111 P!
 1Q
-0N
+1O
+1L
 1K
+1J
+1&!
 1%!
-0(!
+1$!
+1)!
 11!
-0.!
+1/!
 18
-05
+16
+13
 12
+11
+1d!
 1b!
-0_!
 19!
-06!
+17!
 1A!
-0>!
-0=!
-0<!
-0;!
-0:!
-1\!
-0*!
+1?!
+1_!
+1^!
+1]!
+1+!
 1-!
-0T!
-1T!
-1Y!
-1Z!
-1V!
-b10 B!
+0V!
+b0 B!
 b0 C!
 b101 D!
-1=
-1>
-1;
+09
 1I
 0`
 0^
-xy
-xx
-xw
-xv
-xu
-xt
-xs
-xr
-1#!
+0"!
 0~
+0X
 0V
-b101 Q!
-1i
+b0 R!
+1S!
+0g
 0e
-10
+0w
+0u
+0.
 0,
-1&
+0$
 #200000
 0!
 0'
@@ -900,195 +891,12 @@ b101 Q!
 1!
 1'
 b110 E!
-b1101111 P!
-b1101111 S!
-1q
-1p
-1o
-1n
-0m
-1l
-1k
-0j
-1O
-1N
-0M
-1L
-0'!
-1&!
-1)!
-1(!
-1/!
-1.!
-16
-15
-04
-13
-1y
-1x
-1w
-1v
-0u
-1t
-1s
-0r
-1`!
-1_!
-17!
-16!
-1?!
-1>!
-1=!
-1<!
-1;!
-1:!
-1!!
-1~
-1}
-1|
-1{
-1z
-0^!
-1]!
-1+!
-1*!
-0T!
-0V!
-0Y!
-0Z!
-1U!
-1Z!
-1V!
-b1 Q!
-b0 B!
-b110 D!
-09
-0=
-1:
-0I
-1H
-0g
-0.
-0x
-0w
-0v
-0t
-0s
-0$
-0X
-b11111111 Q!
-1h
-1g
-1f
-1e
-1d
-1c
-1b
-1x
-1w
-1v
-1u
-1t
-1s
-1r
-1/
-1.
-1-
-1,
-1+
-1*
-1)
-1%
-1$
-1#
-#220000
-0!
-0'
-#230000
-1!
-1'
-b111 E!
-b11111111 P!
-bx S!
-xq
-xp
-xo
-xn
-xm
-xl
-xk
-xj
-1M
-1J
-1'!
-1$!
-14
-11
-1^!
-1[!
-0U!
-0V!
-0Z!
-b111 D!
-0:
-0;
-0>
-1I
-0#!
-0"!
-0!!
-0~
-0}
-0|
-0{
-0z
-b0 Q!
-1R!
-0i
-0h
-0g
-0f
-0e
-0d
-0c
-0b
-0y
-0x
-0w
-0v
-0u
-0t
-0s
-0r
-00
-0/
-0.
-0-
-0,
-0+
-0*
-0)
-0&
-0%
-0$
-0#
-#240000
-0!
-0'
-#250000
-1!
-1'
-b1000 E!
 b0 P!
-b1110001 S!
+b1110001 T!
 1q
-0p
-0o
-0n
 1m
 1l
 1k
-0j
 0Q
 0P
 0O
@@ -1115,10 +923,10 @@ b1110001 S!
 03
 02
 01
+0d!
+0c!
 0b!
 0a!
-0`!
-0_!
 09!
 08!
 07!
@@ -1131,75 +939,54 @@ b1110001 S!
 0<!
 0;!
 0:!
+0`!
+0_!
 0^!
 0]!
-0\!
-0[!
 0+!
 0*!
 0-!
 0,!
-bx B!
-bx C!
+b10 B!
+b10 C!
+b110 D!
+0I
+1H
+1`
+1"!
+1X
+b100 R!
+0S!
+1g
+1w
+1.
+1$
+#220000
+0!
+0'
+#230000
+1!
+1'
+b111 E!
+b11111111 T!
+1p
+1o
+1n
+1j
+b111 D!
+1I
+#240000
+0!
+0'
+#250000
+1!
+1'
+b1000 E!
 b1000 D!
 0I
 0H
 0G
 1F
-xa
-x`
-x_
-x^
-x]
-x\
-x[
-xZ
-x#!
-x"!
-x!!
-x~
-x}
-x|
-x{
-xz
-xY
-xX
-xW
-xV
-xU
-xT
-xS
-xR
-bx Q!
-xR!
-xi
-xh
-xg
-xf
-xe
-xd
-xc
-xb
-xy
-xx
-xw
-xv
-xu
-xt
-xs
-xr
-x0
-x/
-x.
-x-
-x,
-x+
-x*
-x)
-x&
-x%
-x$
-x#
 #260000
 0!
 0'
@@ -1207,15 +994,6 @@ x#
 1!
 1'
 b1001 E!
-bx S!
-xq
-xp
-xo
-xn
-xm
-xl
-xk
-xj
 b1001 D!
 1I
 #280000
@@ -1235,57 +1013,6 @@ b1010 D!
 1!
 1'
 b1011 E!
-bx P!
-xQ
-xP
-xO
-xN
-xM
-xL
-xK
-xJ
-x'!
-x&!
-x%!
-x$!
-x)!
-x(!
-x1!
-x0!
-x/!
-x.!
-x8
-x7
-x6
-x5
-x4
-x3
-x2
-x1
-xb!
-xa!
-x`!
-x_!
-x9!
-x8!
-x7!
-x6!
-xA!
-x@!
-x?!
-x>!
-x=!
-x<!
-x;!
-x:!
-x^!
-x]!
-x\!
-x[!
-x+!
-x*!
-x-!
-x,!
 b1011 D!
 1I
 #320000

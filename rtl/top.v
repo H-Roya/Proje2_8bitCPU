@@ -1,39 +1,35 @@
+`timescale 1ns / 1ps
 module top (
     input  wire clk,
     input  wire reset,
-    output wire [3:0] led_out          // LSB shows the last 4 bits
+    output wire [3:0] led_out
 );
+    wire [7:0] pc, instr, result;
+    wire reg_write, mem_write, alu_src, mem_to_reg, jump;
+    wire [3:0] alu_op;
 
-    wire [7:0] result_debug;
-    wire [7:0] instruction;
-
-    wire reg_write, mem_write, alu_src, pc_write, mem_to_reg, imm_signed;
-    wire [2:0] alu_op;
-
-    datapath u_datapath (
-        .clk(clk),
-        .reset(reset),
+    datapath dp (
+        .clk(clk), .reset(reset),
         .reg_write(reg_write),
         .mem_write(mem_write),
         .alu_src(alu_src),
-        .pc_write(pc_write),
-        .alu_op(alu_op),
         .mem_to_reg(mem_to_reg),
-        .instruction_out(instruction),
-        .result_out(result_debug),
-        .imm_signed(imm_signed)
+        .jump(jump),
+        .alu_op(alu_op),
+        .pc_out(pc),
+        .instruction_out(instr),
+        .result_out(result)
     );
 
-    control u_control (
-        .instruction(instruction),
+    control ctrl (
+        .opcode(instr[7:4]),
         .reg_write(reg_write),
         .mem_write(mem_write),
         .alu_src(alu_src),
-        .pc_write(pc_write),
         .alu_op(alu_op),
         .mem_to_reg(mem_to_reg),
-        .imm_signed(imm_signed)
+        .jump(jump)
     );
 
-    assign led_out = result_debug[3:0]; 
+    assign led_out = result[3:0];
 endmodule

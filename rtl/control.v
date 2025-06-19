@@ -31,6 +31,7 @@ module control (
             4'b0001: begin // ADD
                 reg_write = 1;
                 alu_op = 3'b000;
+                alu_src = 0;
             end
             4'b0010: begin // SUB
                 reg_write = 1;

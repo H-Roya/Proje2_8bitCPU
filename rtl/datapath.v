@@ -21,7 +21,8 @@ module datapath (
     // Instruction fields
     wire [3:0] opcode   = instruction[7:4];
     wire [1:0] reg_dst  = instruction[3:2];
-    wire [1:0] reg_src1 = instruction[3:2];
+    //wire [1:0] reg_src1 = instruction[3:2];
+    wire [1:0] reg_src1 = instruction[1:0];
     wire [1:0] reg_src2 = instruction[1:0];
     wire [3:0] imm4     = instruction[3:0];
 

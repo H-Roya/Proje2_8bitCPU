@@ -190,3 +190,11 @@ run -all
 #    Time: 1100 ns  Iteration: 0  Instance: /top_tb
 # 1
 # Break in Module top_tb at C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v line 40
+# Compile of top_tb.v was successful.
+# Compile of alu.v was successful.
+# Compile of control.v was successful.
+# Compile of datapath.v was successful.
+# Compile of memory.v was successful.
+# Compile of registerfile.v failed with 1 errors.
+# Compile of top.v was successful.
+# 7 compiles, 1 failed with 1 error.

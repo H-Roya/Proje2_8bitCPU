@@ -37,7 +37,7 @@ module register_file (
             if (pc_write_enable)
                 pc <= pc + 1; //PC increments first
             if (write_enable)
-                register[write_addr] <= write_data;  // Then register writes start
+                registers[write_addr] <= write_data;  // Then register writes start
         end
     end
 

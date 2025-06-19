@@ -2,46 +2,13 @@
 # Compile of alu.v was successful.
 # Compile of control.v was successful.
 # Compile of datapath.v was successful.
-# Compile of memory.v failed with 2 errors.
-# Compile of registerfile.v was successful.
-# Compile of top.v was successful.
-# 7 compiles, 1 failed with 2 errors.
-vlog +verilog2001 your_file.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:46:46 on Jun 17,2025
-# vlog -reportprogress 300 "+verilog2001" your_file.v 
-# ** Error: (vlog-7) Failed to open design unit file "your_file.v" in read mode.
-# No such file or directory. (errno = ENOENT)
-# End time: 12:46:46 on Jun 17,2025, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
-# Compile of top_tb.v was successful.
-# Compile of alu.v was successful.
-# Compile of control.v was successful.
-# Compile of datapath.v was successful.
-# Compile of memory.v failed with 3 errors.
-# Compile of registerfile.v was successful.
-# Compile of top.v was successful.
-# 7 compiles, 1 failed with 3 errors.
-# Compile of top_tb.v was successful.
-# Compile of alu.v was successful.
-# Compile of control.v was successful.
-# Compile of datapath.v was successful.
-# Compile of memory.v failed with 3 errors.
-# Compile of registerfile.v was successful.
-# Compile of top.v was successful.
-# 7 compiles, 1 failed with 3 errors.
-# Compile of top_tb.v was successful.
-# Compile of alu.v was successful.
-# Compile of control.v was successful.
-# Compile of datapath.v was successful.
 # Compile of memory.v was successful.
 # Compile of registerfile.v was successful.
 # Compile of top.v was successful.
 # 7 compiles, 0 failed with no errors.
 vsim -gui work.top_tb
 # vsim -gui work.top_tb 
-# Start time: 12:52:11 on Jun 17,2025
+# Start time: 13:45:18 on Jun 19,2025
 # Loading work.top_tb
 # Loading work.top
 # Loading work.datapath
@@ -223,39 +190,3 @@ run -all
 #    Time: 1100 ns  Iteration: 0  Instance: /top_tb
 # 1
 # Break in Module top_tb at C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v line 40
-# Compile of top_tb.v was successful.
-# Compile of alu.v was successful.
-# Compile of control.v failed with 1 errors.
-# Compile of datapath.v was successful.
-# Compile of memory.v was successful.
-# Compile of registerfile.v was successful.
-# Compile of top.v was successful.
-# 7 compiles, 1 failed with 1 error.
-# Compile of top_tb.v was successful.
-# Compile of alu.v was successful.
-# Compile of control.v was successful.
-# Compile of datapath.v was successful.
-# Compile of memory.v was successful.
-# Compile of registerfile.v was successful.
-# Compile of top.v was successful.
-# 7 compiles, 0 failed with no errors.
-vsim -gui work.top_tb
-# End time: 13:11:55 on Jun 17,2025, Elapsed time: 0:19:44
-# Errors: 0, Warnings: 7
-# vsim -gui work.top_tb 
-# Start time: 13:11:55 on Jun 17,2025
-# Loading work.top_tb
-# Loading work.top
-# Loading work.datapath
-# Loading work.memory
-# Loading work.register_file
-# Loading work.alu
-# Loading work.control
-add wave -position insertpoint sim:/top_tb/*
-run -all
-# ** Note: $finish    : C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v(17)
-#    Time: 1050 ns  Iteration: 0  Instance: /top_tb
-# 1
-# Break in Module top_tb at C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v line 17
-# End time: 13:31:42 on Jun 17,2025, Elapsed time: 0:19:47
-# Errors: 0, Warnings: 1

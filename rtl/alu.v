@@ -9,6 +9,7 @@ module alu (
 );
 
     always @(*) begin
+        $display("[%t] ALU: a=%h b=%h op=%b", $time, a, b, alu_op);
         case (alu_op)
             3'b000: result = a + b;       // ADD
             3'b001: result = a - b;       // SUB

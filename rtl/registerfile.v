@@ -34,10 +34,10 @@ module register_file (
             for (i = 0; i < 4; i = i + 1)
                 registers[i] <= 8'b0;
         end else begin
-            if (pc_write_enable)
-                pc <= pc + 1; //PC increments first
             if (write_enable)
                 registers[write_addr] <= write_data;  // Then register writes start
+            if (pc_write_enable)
+                pc <= pc + 1; //PC increments first
         end
     end
 

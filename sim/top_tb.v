@@ -35,6 +35,13 @@ module top_tb;
     end
 
     always @(posedge clk) begin
+        if (uut.u_datapath.pc == 4 && uut.u_datapath.instruction == 8'h1A) begin
+            #20; // Wait for result
+            if (uut.u_datapath.u_register_file.registers[2] != 8'h06) begin
+                $display("ERROR: ADD failed! Expected 6, got %h", 
+                    uut.u_datapath.u_register_file.registers[2]);
+        end
+    end
         if (!reset) begin
             $display("T=%4t | PC=%h | Instr=%h | LEDs=%b", 
                 $time, 

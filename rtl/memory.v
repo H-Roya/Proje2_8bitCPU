@@ -13,12 +13,11 @@ module memory (
     initial begin
         mem[0] = 8'h71;  // ld R0, 1
         mem[1] = 8'h75;  // ld R1, 5
-        mem[2] = 8'h7A;  // ld R2, 10
         mem[3] = 8'h1A;  // add R2 = R0 + R1
         mem[4] = 8'hFF;  // HALT
 
         // clear
-        for (i = 5; i < 256; i = i + 1) begin
+        for (i = 4; i < 256; i = i + 1) begin
             mem[i] = 8'h00;  // NOP or 00
         end
     end

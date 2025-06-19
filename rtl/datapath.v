@@ -21,9 +21,9 @@ module datapath (
     // Instruction fields
     wire [3:0] opcode   = instruction[7:4];
     wire [1:0] reg_dst  = instruction[3:2];
-    //wire [1:0] reg_src1 = instruction[3:2];
-    wire [1:0] reg_src1 = instruction[1:0];
-    wire [1:0] reg_src2 = instruction[1:0];
+    wire [1:0] reg_src = instruction[1:0];
+    /*wire [1:0] reg_src1 = instruction[1:0];
+    wire [1:0] reg_src2 = [3:2];*/
     wire [3:0] imm4     = instruction[3:0];
 
     assign instruction_out = instruction;
@@ -33,9 +33,9 @@ module datapath (
     wire [7:0] imm8_signed   = {{4{imm4[3]}}, imm4}; // Sign-extend
 
     // Select operand B for ALU
-    assign alu_operand_b = (alu_src) 
-                            ? (imm_signed ? imm8_signed : imm8_unsigned) 
-                            : reg_data2;
+    assign alu_operand_b = (alu_src) ? 
+                           (imm_signed ? imm8_signed: imm8_unsigned) : 
+                           reg_data2;
 
     register_file u_register_file (
         .clk(clk),
@@ -43,8 +43,8 @@ module datapath (
         .write_enable(reg_write),
         .write_addr(reg_dst),
         .write_data(write_data),
-        .read_addr1(reg_src1),
-        .read_addr2(reg_src2),
+        .read_addr1(reg_dst),
+        .read_addr2(reg_src), //source 2 is destination
         .read_data1(reg_data1),
         .read_data2(reg_data2),
         .pc_out(pc),

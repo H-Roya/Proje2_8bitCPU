@@ -1,22 +1,25 @@
+`timescale 1ns / 1ps
+
 module alu (
-    input  wire [7:0] a,
-    input  wire [7:0] b,
-    input  wire [3:0] alu_op,
-    output reg  [7:0] result,
-    output wire       zero
+    input  wire [7:0] a,        // Operand A
+    input  wire [7:0] b,        // Operand B
+    input  wire [2:0] alu_op,   // Operation choose
+    output reg  [7:0] result,   // ALU operation result
+    output wire       zero      // Zero flag
 );
+
     always @(*) begin
         case (alu_op)
-            4'b0001: result = a + b;     
-            4'b0010: result = a - b;     
-            4'b0011: result = a & b;     
-            4'b0100: result = a | b;     
-            4'b0101: result = ~a;        
-            4'b0111: result = (a < b) ? 8'd1 : 8'd0; 
-            default: result = 8'd0;
+            3'b000: result = a + b;       // ADD
+            3'b001: result = a - b;       // SUB
+            3'b010: result = a & b;       // AND
+            3'b011: result = a | b;       // OR
+            3'b100: result = ~a;          // NOT 
+            3'b101: result = (a < b) ? 8'b00000001 : 8'b00000000; // Less than
+            default: result = 8'b00000000;
         endcase
     end
 
-    assign zero = (result == 8'd0);
+    assign zero = (result == 8'b00000000);
 
 endmodule

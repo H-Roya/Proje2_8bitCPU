@@ -19,6 +19,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	alu
 
+} {} {}} C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v {1 {vlog -work work -stats=none C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module top
+
+Top level modules:
+	top
+
 } {} {}} C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v {1 {vlog -work work -stats=none C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module top_tb

@@ -26,6 +26,11 @@ module top_tb;
 
     always @(posedge clk) begin
         $display("PC=%h | Instr=%b | LEDs=%b", uut.u_datapath.pc, uut.u_datapath.instr, led_out);
+        
+        if (uut.halt) begin
+            $display("HALT detected at PC=%h, stopping simulation.", uut.u_datapath.pc);
+            $finish;
+        end
     end
 
 

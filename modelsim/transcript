@@ -1,52 +1,11 @@
 # Compile of top_tb.v was successful.
 # Compile of alu.v was successful.
 # Compile of control.v was successful.
-# Compile of datapath.v was successful.
+# Compile of datapath.v failed with 1 errors.
 # Compile of memory.v was successful.
 # Compile of registerfile.v was successful.
 # Compile of top.v was successful.
-# 7 compiles, 0 failed with no errors.
-vsim -gui work.top_tb
-# vsim -gui work.top_tb 
-# Start time: 21:35:48 on Jun 23,2025
-# Loading work.top_tb
-# Loading work.top
-# Loading work.datapath
-# Loading work.memory
-# Loading work.register_file
-# Loading work.alu
-# Loading work.control
-# ** Warning: (vsim-3008) [CNNODP] - Component name (instruction) is not on a downward path.
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v Line: 38
-# ** Error: (vsim-3043) Unresolved reference to 'instruction' in uut.u_datapath.instruction.
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v Line: 38
-# ** Warning: (vsim-3008) [CNNODP] - Component name (u_register_file) is not on a downward path.
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v Line: 40
-# ** Error: (vsim-3043) Unresolved reference to 'u_register_file' in uut.u_datapath.u_register_file.
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v Line: 40
-# ** Error (suppressible): (vsim-3389) Port 'mem_write' not found in the connected module (4th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 13
-# ** Error (suppressible): (vsim-3389) Port 'pc_write' not found in the connected module (6th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 13
-# ** Error (suppressible): (vsim-3389) Port 'mem_to_reg' not found in the connected module (8th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 13
-# ** Error (suppressible): (vsim-3389) Port 'instruction_out' not found in the connected module (9th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 13
-# ** Error (suppressible): (vsim-3389) Port 'imm_signed' not found in the connected module (11th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 13
-# ** Error (suppressible): (vsim-3389) Port 'instruction' not found in the connected module (1st connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_control File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 27
-# ** Error (suppressible): (vsim-3389) Port 'mem_write' not found in the connected module (3rd connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_control File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 27
-# ** Error (suppressible): (vsim-3389) Port 'pc_write' not found in the connected module (5th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_control File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 27
-# ** Error (suppressible): (vsim-3389) Port 'mem_to_reg' not found in the connected module (7th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_control File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 27
-# ** Error (suppressible): (vsim-3389) Port 'imm_signed' not found in the connected module (8th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_control File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 27
-# Error loading design
-# End time: 21:35:49 on Jun 23,2025, Elapsed time: 0:00:01
-# Errors: 12, Warnings: 4
+# 7 compiles, 1 failed with 1 error.
 # Compile of top_tb.v was successful.
 # Compile of alu.v was successful.
 # Compile of control.v was successful.
@@ -57,87 +16,7 @@ vsim -gui work.top_tb
 # 7 compiles, 0 failed with no errors.
 vsim -gui work.top_tb
 # vsim -gui work.top_tb 
-# Start time: 21:38:38 on Jun 23,2025
-# Loading work.top_tb
-# Loading work.top
-# Loading work.datapath
-# Loading work.memory
-# Loading work.register_file
-# Loading work.alu
-# Loading work.control
-# ** Error (suppressible): (vsim-3389) Port 'mem_write' not found in the connected module (4th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 13
-# ** Error (suppressible): (vsim-3389) Port 'pc_write' not found in the connected module (6th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 13
-# ** Error (suppressible): (vsim-3389) Port 'mem_to_reg' not found in the connected module (8th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 13
-# ** Error (suppressible): (vsim-3389) Port 'instruction_out' not found in the connected module (9th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 13
-# ** Error (suppressible): (vsim-3389) Port 'imm_signed' not found in the connected module (11th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 13
-# ** Error (suppressible): (vsim-3389) Port 'instruction' not found in the connected module (1st connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_control File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 27
-# ** Error (suppressible): (vsim-3389) Port 'mem_write' not found in the connected module (3rd connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_control File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 27
-# ** Error (suppressible): (vsim-3389) Port 'pc_write' not found in the connected module (5th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_control File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 27
-# ** Error (suppressible): (vsim-3389) Port 'mem_to_reg' not found in the connected module (7th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_control File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 27
-# ** Error (suppressible): (vsim-3389) Port 'imm_signed' not found in the connected module (8th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_control File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 27
-# Error loading design
-# End time: 21:38:39 on Jun 23,2025, Elapsed time: 0:00:01
-# Errors: 10, Warnings: 2
-# Compile of top_tb.v was successful.
-# Compile of alu.v was successful.
-# Compile of control.v was successful.
-# Compile of datapath.v was successful.
-# Compile of memory.v was successful.
-# Compile of registerfile.v was successful.
-# Compile of top.v was successful.
-# 7 compiles, 0 failed with no errors.
-vsim -gui work.top_tb
-# vsim -gui work.top_tb 
-# Start time: 21:42:27 on Jun 23,2025
-# Loading work.top_tb
-# Loading work.top
-# Loading work.datapath
-# Loading work.memory
-# Loading work.register_file
-# Loading work.alu
-# Loading work.control
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'u_datapath'.  Expected 10, found 6.
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 12
-# ** Error: (vsim-3063) Port 'instruction_out' not found in the connected module (6th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 12
-# ** Warning: (vsim-3722) C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v(12): [TFMPC] - Missing connection for port 'alu_src'.
-# ** Warning: (vsim-3722) C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v(12): [TFMPC] - Missing connection for port 'jump'.
-# ** Warning: (vsim-3722) C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v(12): [TFMPC] - Missing connection for port 'branch_z'.
-# ** Warning: (vsim-3722) C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v(12): [TFMPC] - Missing connection for port 'halt'.
-# ** Warning: (vsim-3722) C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v(12): [TFMPC] - Missing connection for port 'instr'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'u_control'.  Expected 7, found 3.
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_control File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 21
-# ** Error: (vsim-3063) Port 'instruction' not found in the connected module (1st connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_control File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 21
-# ** Warning: (vsim-3722) C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v(21): [TFMPC] - Missing connection for port 'opcode'.
-# ** Warning: (vsim-3722) C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v(21): [TFMPC] - Missing connection for port 'alu_src'.
-# ** Warning: (vsim-3722) C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v(21): [TFMPC] - Missing connection for port 'jump'.
-# ** Warning: (vsim-3722) C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v(21): [TFMPC] - Missing connection for port 'branch_z'.
-# ** Warning: (vsim-3722) C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v(21): [TFMPC] - Missing connection for port 'halt'.
-# Error loading design
-# End time: 21:42:28 on Jun 23,2025, Elapsed time: 0:00:01
-# Errors: 2, Warnings: 14
-# Compile of top_tb.v was successful.
-# Compile of alu.v was successful.
-# Compile of control.v was successful.
-# Compile of datapath.v was successful.
-# Compile of memory.v was successful.
-# Compile of registerfile.v was successful.
-# Compile of top.v was successful.
-# 7 compiles, 0 failed with no errors.
-vsim -gui work.top_tb
-# vsim -gui work.top_tb 
-# Start time: 21:50:58 on Jun 23,2025
+# Start time: 22:13:15 on Jun 23,2025
 # Loading work.top_tb
 # Loading work.top
 # Loading work.datapath
@@ -147,76 +26,144 @@ vsim -gui work.top_tb
 # Loading work.control
 add wave -position insertpoint sim:/top_tb/*
 run -all
-# T=10000 | LEDS=0001
-# T=30000 | LEDS=0001
-# T=50000 | LEDS=0001
-# T=70000 | LEDS=0001
-# T=90000 | LEDS=0001
-# T=110000 | LEDS=0001
-# T=130000 | LEDS=0101
-# T=150000 | LEDS=0110
-# T=170000 | LEDS=1100
-# T=190000 | LEDS=1100
-# T=210000 | LEDS=1100
-# T=230000 | LEDS=1100
-# T=250000 | LEDS=1100
-# T=270000 | LEDS=1100
-# T=290000 | LEDS=1100
-# T=310000 | LEDS=1100
-# T=330000 | LEDS=1100
-# T=350000 | LEDS=1100
-# T=370000 | LEDS=1100
-# T=390000 | LEDS=1100
-# T=410000 | LEDS=1100
-# T=430000 | LEDS=1100
-# T=450000 | LEDS=1100
-# T=470000 | LEDS=1100
-# T=490000 | LEDS=1100
-# T=510000 | LEDS=1100
-# T=530000 | LEDS=1100
-# T=550000 | LEDS=1100
-# T=570000 | LEDS=1100
-# T=590000 | LEDS=1100
-# T=610000 | LEDS=1100
-# T=630000 | LEDS=1100
-# T=650000 | LEDS=1100
-# T=670000 | LEDS=1100
-# T=690000 | LEDS=1100
-# T=710000 | LEDS=1100
-# T=730000 | LEDS=1100
-# T=750000 | LEDS=1100
-# T=770000 | LEDS=1100
-# T=790000 | LEDS=1100
-# T=810000 | LEDS=1100
-# T=830000 | LEDS=1100
-# T=850000 | LEDS=1100
-# T=870000 | LEDS=1100
-# T=890000 | LEDS=1100
-# T=910000 | LEDS=1100
-# T=930000 | LEDS=1100
-# T=950000 | LEDS=1100
-# T=970000 | LEDS=1100
-# T=990000 | LEDS=1100
-# T=1010000 | LEDS=1100
-# T=1030000 | LEDS=1100
-# T=1050000 | LEDS=1100
-# T=1070000 | LEDS=1100
-# T=1090000 | LEDS=1100
+# PC=00 | Instr=00010010 | LEDs=0010
+# PC=00 | Instr=00010010 | LEDs=0010
+# PC=00 | Instr=00010010 | LEDs=0010
+# PC=00 | Instr=00010010 | LEDs=0010
+# PC=00 | Instr=00010010 | LEDs=0010
+# PC=00 | Instr=00010010 | LEDs=0010
+# PC=01 | Instr=00010100 | LEDs=0100
+# PC=02 | Instr=00100001 | LEDs=0110
+# PC=03 | Instr=00110001 | LEDs=0010
+# PC=04 | Instr=01000001 | LEDs=0110
+# PC=01 | Instr=00010100 | LEDs=1000
+# PC=02 | Instr=00100001 | LEDs=1010
+# PC=03 | Instr=00110001 | LEDs=0010
+# PC=04 | Instr=01000001 | LEDs=1010
+# PC=01 | Instr=00010100 | LEDs=1100
+# PC=02 | Instr=00100001 | LEDs=1110
+# PC=03 | Instr=00110001 | LEDs=0010
+# PC=04 | Instr=01000001 | LEDs=1110
+# PC=01 | Instr=00010100 | LEDs=0000
+# PC=02 | Instr=00100001 | LEDs=0010
+# PC=03 | Instr=00110001 | LEDs=0010
+# PC=04 | Instr=01000001 | LEDs=0010
+# PC=01 | Instr=00010100 | LEDs=0100
+# PC=02 | Instr=00100001 | LEDs=0110
+# PC=03 | Instr=00110001 | LEDs=0010
+# PC=04 | Instr=01000001 | LEDs=0110
+# PC=01 | Instr=00010100 | LEDs=1000
+# PC=02 | Instr=00100001 | LEDs=1010
+# PC=03 | Instr=00110001 | LEDs=0010
+# PC=04 | Instr=01000001 | LEDs=1010
+# PC=01 | Instr=00010100 | LEDs=1100
+# PC=02 | Instr=00100001 | LEDs=1110
+# PC=03 | Instr=00110001 | LEDs=0010
+# PC=04 | Instr=01000001 | LEDs=1110
+# PC=01 | Instr=00010100 | LEDs=0000
+# PC=02 | Instr=00100001 | LEDs=0010
+# PC=03 | Instr=00110001 | LEDs=0010
+# PC=04 | Instr=01000001 | LEDs=0010
+# PC=01 | Instr=00010100 | LEDs=0100
+# PC=02 | Instr=00100001 | LEDs=0110
+# PC=03 | Instr=00110001 | LEDs=0010
+# PC=04 | Instr=01000001 | LEDs=0110
+# PC=01 | Instr=00010100 | LEDs=1000
+# PC=02 | Instr=00100001 | LEDs=1010
+# PC=03 | Instr=00110001 | LEDs=0010
+# PC=04 | Instr=01000001 | LEDs=1010
+# PC=01 | Instr=00010100 | LEDs=1100
+# PC=02 | Instr=00100001 | LEDs=1110
+# PC=03 | Instr=00110001 | LEDs=0010
+# PC=04 | Instr=01000001 | LEDs=1110
+# PC=01 | Instr=00010100 | LEDs=0000
+# PC=02 | Instr=00100001 | LEDs=0010
+# PC=03 | Instr=00110001 | LEDs=0010
+# PC=04 | Instr=01000001 | LEDs=0010
+# PC=01 | Instr=00010100 | LEDs=0100
 # ** Note: $finish    : C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v(24)
 #    Time: 1100 ns  Iteration: 0  Instance: /top_tb
 # 1
 # Break in Module top_tb at C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v line 24
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
+# Compile of top_tb.v was successful.
+# Compile of alu.v was successful.
+# Compile of control.v was successful.
+# Compile of datapath.v was successful.
+# Compile of memory.v was successful.
+# Compile of registerfile.v was successful.
+# Compile of top.v was successful.
+# 7 compiles, 0 failed with no errors.
+# Load canceled
+vsim -gui work.top_tb
+# End time: 22:16:47 on Jun 23,2025, Elapsed time: 0:03:32
+# Errors: 0, Warnings: 4
+# vsim -gui work.top_tb 
+# Start time: 22:16:47 on Jun 23,2025
+# Loading work.top_tb
+# Loading work.top
+# Loading work.datapath
+# Loading work.memory
+# Loading work.register_file
+# Loading work.alu
+# Loading work.control
+add wave -position insertpoint sim:/top_tb/*
+run -all
+# PC=00 | Instr=00010001 | LEDs=0001
+# PC=00 | Instr=00010001 | LEDs=0001
+# PC=00 | Instr=00010001 | LEDs=0001
+# PC=00 | Instr=00010001 | LEDs=0001
+# PC=00 | Instr=00010001 | LEDs=0001
+# PC=00 | Instr=00010001 | LEDs=0001
+# PC=01 | Instr=00010101 | LEDs=0101
+# PC=02 | Instr=00100001 | LEDs=0110
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=11110000 | LEDs=1100
+# ** Note: $finish    : C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v(24)
+#    Time: 1100 ns  Iteration: 0  Instance: /top_tb
+# 1
+# Break in Module top_tb at C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v line 24

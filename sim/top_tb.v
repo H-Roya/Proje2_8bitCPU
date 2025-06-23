@@ -25,7 +25,8 @@ module top_tb;
     end
 
     always @(posedge clk) begin
-        $display("T=%0t | LEDS=%b", $time, led_out);
+        $display("PC=%h | Instr=%b | LEDs=%b", uut.u_datapath.pc, uut.u_datapath.instr, led_out);
     end
+
 
 endmodule

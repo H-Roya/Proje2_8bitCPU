@@ -8,41 +8,45 @@
 # 7 compiles, 0 failed with no errors.
 vsim -gui work.top_tb
 # vsim -gui work.top_tb 
-# Start time: 22:56:48 on Jun 21,2025
+# Start time: 21:35:48 on Jun 23,2025
 # Loading work.top_tb
 # Loading work.top
 # Loading work.datapath
-# Loading work.register_file
 # Loading work.memory
+# Loading work.register_file
 # Loading work.alu
 # Loading work.control
-# ** Error (suppressible): (vsim-3389) Port 'clk' not found in the connected module (1st connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath/u_instr_mem File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/datapath.v Line: 55
-# ** Error (suppressible): (vsim-3389) Port 'write_enable' not found in the connected module (2nd connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath/u_instr_mem File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/datapath.v Line: 55
-# ** Error (suppressible): (vsim-3389) Port 'address' not found in the connected module (3rd connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath/u_instr_mem File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/datapath.v Line: 55
-# ** Error (suppressible): (vsim-3389) Port 'write_data' not found in the connected module (4th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath/u_instr_mem File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/datapath.v Line: 55
-# ** Error (suppressible): (vsim-3389) Port 'read_data' not found in the connected module (5th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath/u_instr_mem File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/datapath.v Line: 55
-# ** Error (suppressible): (vsim-3389) Port 'clk' not found in the connected module (1st connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath/u_data_mem File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/datapath.v Line: 72
-# ** Error (suppressible): (vsim-3389) Port 'write_enable' not found in the connected module (2nd connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath/u_data_mem File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/datapath.v Line: 72
-# ** Error (suppressible): (vsim-3389) Port 'address' not found in the connected module (3rd connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath/u_data_mem File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/datapath.v Line: 72
-# ** Error (suppressible): (vsim-3389) Port 'write_data' not found in the connected module (4th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath/u_data_mem File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/datapath.v Line: 72
-# ** Error (suppressible): (vsim-3389) Port 'read_data' not found in the connected module (5th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath/u_data_mem File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/datapath.v Line: 72
+# ** Warning: (vsim-3008) [CNNODP] - Component name (instruction) is not on a downward path.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v Line: 38
+# ** Error: (vsim-3043) Unresolved reference to 'instruction' in uut.u_datapath.instruction.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v Line: 38
+# ** Warning: (vsim-3008) [CNNODP] - Component name (u_register_file) is not on a downward path.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v Line: 40
+# ** Error: (vsim-3043) Unresolved reference to 'u_register_file' in uut.u_datapath.u_register_file.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v Line: 40
+# ** Error (suppressible): (vsim-3389) Port 'mem_write' not found in the connected module (4th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 13
+# ** Error (suppressible): (vsim-3389) Port 'pc_write' not found in the connected module (6th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 13
+# ** Error (suppressible): (vsim-3389) Port 'mem_to_reg' not found in the connected module (8th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 13
+# ** Error (suppressible): (vsim-3389) Port 'instruction_out' not found in the connected module (9th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 13
+# ** Error (suppressible): (vsim-3389) Port 'imm_signed' not found in the connected module (11th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 13
+# ** Error (suppressible): (vsim-3389) Port 'instruction' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_control File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 27
 # ** Error (suppressible): (vsim-3389) Port 'mem_write' not found in the connected module (3rd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_control File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 27
+# ** Error (suppressible): (vsim-3389) Port 'pc_write' not found in the connected module (5th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_control File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 27
+# ** Error (suppressible): (vsim-3389) Port 'mem_to_reg' not found in the connected module (7th connection).
 #    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_control File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 27
 # ** Error (suppressible): (vsim-3389) Port 'imm_signed' not found in the connected module (8th connection).
 #    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_control File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 27
 # Error loading design
-# End time: 22:56:50 on Jun 21,2025, Elapsed time: 0:00:02
-# Errors: 12, Warnings: 2
+# End time: 21:35:49 on Jun 23,2025, Elapsed time: 0:00:01
+# Errors: 12, Warnings: 4
 # Compile of top_tb.v was successful.
 # Compile of alu.v was successful.
 # Compile of control.v was successful.
@@ -53,36 +57,36 @@ vsim -gui work.top_tb
 # 7 compiles, 0 failed with no errors.
 vsim -gui work.top_tb
 # vsim -gui work.top_tb 
-# Start time: 22:59:08 on Jun 21,2025
+# Start time: 21:38:38 on Jun 23,2025
 # Loading work.top_tb
 # Loading work.top
 # Loading work.datapath
-# Loading work.register_file
 # Loading work.memory
+# Loading work.register_file
 # Loading work.alu
 # Loading work.control
-# ** Error (suppressible): (vsim-3389) Port 'clk' not found in the connected module (1st connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath/u_instr_mem File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/datapath.v Line: 55
-# ** Error (suppressible): (vsim-3389) Port 'write_enable' not found in the connected module (2nd connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath/u_instr_mem File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/datapath.v Line: 55
-# ** Error (suppressible): (vsim-3389) Port 'address' not found in the connected module (3rd connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath/u_instr_mem File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/datapath.v Line: 55
-# ** Error (suppressible): (vsim-3389) Port 'write_data' not found in the connected module (4th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath/u_instr_mem File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/datapath.v Line: 55
-# ** Error (suppressible): (vsim-3389) Port 'read_data' not found in the connected module (5th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath/u_instr_mem File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/datapath.v Line: 55
-# ** Error (suppressible): (vsim-3389) Port 'clk' not found in the connected module (1st connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath/u_data_mem File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/datapath.v Line: 72
-# ** Error (suppressible): (vsim-3389) Port 'write_enable' not found in the connected module (2nd connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath/u_data_mem File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/datapath.v Line: 72
-# ** Error (suppressible): (vsim-3389) Port 'address' not found in the connected module (3rd connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath/u_data_mem File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/datapath.v Line: 72
-# ** Error (suppressible): (vsim-3389) Port 'write_data' not found in the connected module (4th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath/u_data_mem File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/datapath.v Line: 72
-# ** Error (suppressible): (vsim-3389) Port 'read_data' not found in the connected module (5th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath/u_data_mem File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/datapath.v Line: 72
+# ** Error (suppressible): (vsim-3389) Port 'mem_write' not found in the connected module (4th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 13
+# ** Error (suppressible): (vsim-3389) Port 'pc_write' not found in the connected module (6th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 13
+# ** Error (suppressible): (vsim-3389) Port 'mem_to_reg' not found in the connected module (8th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 13
+# ** Error (suppressible): (vsim-3389) Port 'instruction_out' not found in the connected module (9th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 13
+# ** Error (suppressible): (vsim-3389) Port 'imm_signed' not found in the connected module (11th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 13
+# ** Error (suppressible): (vsim-3389) Port 'instruction' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_control File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 27
+# ** Error (suppressible): (vsim-3389) Port 'mem_write' not found in the connected module (3rd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_control File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 27
+# ** Error (suppressible): (vsim-3389) Port 'pc_write' not found in the connected module (5th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_control File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 27
+# ** Error (suppressible): (vsim-3389) Port 'mem_to_reg' not found in the connected module (7th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_control File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 27
+# ** Error (suppressible): (vsim-3389) Port 'imm_signed' not found in the connected module (8th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_control File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 27
 # Error loading design
-# End time: 22:59:09 on Jun 21,2025, Elapsed time: 0:00:01
+# End time: 21:38:39 on Jun 23,2025, Elapsed time: 0:00:01
 # Errors: 10, Warnings: 2
 # Compile of top_tb.v was successful.
 # Compile of alu.v was successful.
@@ -94,206 +98,35 @@ vsim -gui work.top_tb
 # 7 compiles, 0 failed with no errors.
 vsim -gui work.top_tb
 # vsim -gui work.top_tb 
-# Start time: 23:01:09 on Jun 21,2025
+# Start time: 21:42:27 on Jun 23,2025
 # Loading work.top_tb
 # Loading work.top
 # Loading work.datapath
-# Loading work.register_file
 # Loading work.memory
+# Loading work.register_file
 # Loading work.alu
 # Loading work.control
-add wave -position insertpoint sim:/top_tb/*
-run -all
-# CTRL: op=0111 alu_op=000 reg_write=1 imm_signed=0
-# [               10000] ALU: a=00 b=01 op=000
-# [               30000] REG WRITE: R0 = 01
-# [               30000] PC = 00
-# [               50000] REG WRITE: R0 = 01
-# [               50000] PC = 00
-# [               70000] REG WRITE: R0 = 01
-# [               70000] PC = 00
-# [               90000] REG WRITE: R0 = 01
-# [               90000] PC = 00
-# [              110000] REG WRITE: R0 = 01
-# [              110000] PC = 00
-# [              130000] REG WRITE: R0 = 01
-# [              130000] PC = 00
-# [              150000] REG WRITE: R0 = 01
-# [              150000] PC = 00
-# [              170000] REG WRITE: R0 = 01
-# [              170000] PC = 00
-# [              190000] REG WRITE: R0 = 01
-# [              190000] PC = 00
-# [              210000] REG WRITE: R0 = 01
-# [              210000] PC = 00
-# T=210000 | PC=00 | Instr=71 | LEDs=0001
-# REGS: R0=00 R1=00 R2=00 R3=00
-# [              210000] ALU: a=01 b=01 op=000
-# [              230000] REG WRITE: R0 = 02
-# [              230000] PC = 01
-# T=230000 | PC=01 | Instr=71 | LEDs=0010
-# REGS: R0=01 R1=00 R2=00 R3=00
-# [              230000] ALU: a=01 b=05 op=000
-# [              230000] ALU: a=00 b=05 op=000
-# [              250000] REG WRITE: R1 = 05
-# [              250000] PC = 02
-# T=250000 | PC=02 | Instr=75 | LEDs=0101
-# REGS: R0=02 R1=00 R2=00 R3=00
-# CTRL: op=xxxx alu_op=000 reg_write=0 imm_signed=0
-# [              250000] ALU: a=00 b=0x op=000
-# [              250000] ALU: a=xx b=xx op=000
-# [              270000] PC = 03
-# T=270000 | PC=03 | Instr=xx | LEDs=xxxx
-# REGS: R0=02 R1=05 R2=00 R3=00
-# CTRL: op=0001 alu_op=000 reg_write=1 imm_signed=0
-# [              270000] ALU: a=00 b=00 op=000
-# [              290000] REG WRITE: R2 = 00
-# [              290000] PC = 04
-# CTRL: op=0000 alu_op=000 reg_write=0 imm_signed=0
-# [              290000] ALU: a=02 b=02 op=000
-# ERROR: ADD failed! Expected 6, got 00
-# T=310000 | PC=05 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [              310000] PC = 05
-# T=310000 | PC=05 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [              330000] PC = 06
-# T=330000 | PC=06 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [              350000] PC = 07
-# T=350000 | PC=07 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [              370000] PC = 08
-# T=370000 | PC=08 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [              390000] PC = 09
-# T=390000 | PC=09 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [              410000] PC = 0a
-# T=410000 | PC=0a | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [              430000] PC = 0b
-# T=430000 | PC=0b | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [              450000] PC = 0c
-# T=450000 | PC=0c | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [              470000] PC = 0d
-# T=470000 | PC=0d | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [              490000] PC = 0e
-# T=490000 | PC=0e | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [              510000] PC = 0f
-# T=510000 | PC=0f | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [              530000] PC = 10
-# T=530000 | PC=10 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [              550000] PC = 11
-# T=550000 | PC=11 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [              570000] PC = 12
-# T=570000 | PC=12 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [              590000] PC = 13
-# T=590000 | PC=13 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [              610000] PC = 14
-# T=610000 | PC=14 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [              630000] PC = 15
-# T=630000 | PC=15 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [              650000] PC = 16
-# T=650000 | PC=16 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [              670000] PC = 17
-# T=670000 | PC=17 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [              690000] PC = 18
-# T=690000 | PC=18 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [              710000] PC = 19
-# T=710000 | PC=19 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [              730000] PC = 1a
-# T=730000 | PC=1a | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [              750000] PC = 1b
-# T=750000 | PC=1b | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [              770000] PC = 1c
-# T=770000 | PC=1c | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [              790000] PC = 1d
-# T=790000 | PC=1d | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [              810000] PC = 1e
-# T=810000 | PC=1e | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [              830000] PC = 1f
-# T=830000 | PC=1f | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [              850000] PC = 20
-# T=850000 | PC=20 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [              870000] PC = 21
-# T=870000 | PC=21 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [              890000] PC = 22
-# T=890000 | PC=22 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [              910000] PC = 23
-# T=910000 | PC=23 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [              930000] PC = 24
-# T=930000 | PC=24 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [              950000] PC = 25
-# T=950000 | PC=25 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [              970000] PC = 26
-# T=970000 | PC=26 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [              990000] PC = 27
-# T=990000 | PC=27 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [             1010000] PC = 28
-# T=1010000 | PC=28 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [             1030000] PC = 29
-# T=1030000 | PC=29 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [             1050000] PC = 2a
-# T=1050000 | PC=2a | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [             1070000] PC = 2b
-# T=1070000 | PC=2b | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [             1090000] PC = 2c
-# T=1090000 | PC=2c | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [             1110000] PC = 2d
-# T=1110000 | PC=2d | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [             1130000] PC = 2e
-# T=1130000 | PC=2e | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [             1150000] PC = 2f
-# T=1150000 | PC=2f | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [             1170000] PC = 30
-# T=1170000 | PC=30 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# [             1190000] PC = 31
-# T=1190000 | PC=31 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=05 R2=00 R3=00
-# ❌ TEST FAILED! Final LED output: 0100
-# ** Note: $finish    : C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v(34)
-#    Time: 1200 ns  Iteration: 0  Instance: /top_tb
-# 1
-# Break in Module top_tb at C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v line 34
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'u_datapath'.  Expected 10, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 12
+# ** Error: (vsim-3063) Port 'instruction_out' not found in the connected module (6th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 12
+# ** Warning: (vsim-3722) C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v(12): [TFMPC] - Missing connection for port 'alu_src'.
+# ** Warning: (vsim-3722) C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v(12): [TFMPC] - Missing connection for port 'jump'.
+# ** Warning: (vsim-3722) C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v(12): [TFMPC] - Missing connection for port 'branch_z'.
+# ** Warning: (vsim-3722) C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v(12): [TFMPC] - Missing connection for port 'halt'.
+# ** Warning: (vsim-3722) C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v(12): [TFMPC] - Missing connection for port 'instr'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'u_control'.  Expected 7, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_control File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 21
+# ** Error: (vsim-3063) Port 'instruction' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_control File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 21
+# ** Warning: (vsim-3722) C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v(21): [TFMPC] - Missing connection for port 'opcode'.
+# ** Warning: (vsim-3722) C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v(21): [TFMPC] - Missing connection for port 'alu_src'.
+# ** Warning: (vsim-3722) C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v(21): [TFMPC] - Missing connection for port 'jump'.
+# ** Warning: (vsim-3722) C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v(21): [TFMPC] - Missing connection for port 'branch_z'.
+# ** Warning: (vsim-3722) C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v(21): [TFMPC] - Missing connection for port 'halt'.
+# Error loading design
+# End time: 21:42:28 on Jun 23,2025, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 14
 # Compile of top_tb.v was successful.
 # Compile of alu.v was successful.
 # Compile of control.v was successful.
@@ -303,205 +136,73 @@ run -all
 # Compile of top.v was successful.
 # 7 compiles, 0 failed with no errors.
 vsim -gui work.top_tb
-# End time: 23:10:47 on Jun 21,2025, Elapsed time: 0:09:38
-# Errors: 0, Warnings: 3
 # vsim -gui work.top_tb 
-# Start time: 23:10:47 on Jun 21,2025
+# Start time: 21:50:58 on Jun 23,2025
 # Loading work.top_tb
 # Loading work.top
 # Loading work.datapath
-# Loading work.register_file
 # Loading work.memory
+# Loading work.register_file
 # Loading work.alu
 # Loading work.control
 add wave -position insertpoint sim:/top_tb/*
 run -all
-# CTRL: op=0111 alu_op=000 reg_write=1 imm_signed=0
-# [               10000] ALU: a=00 b=01 op=000
-# [               30000] REG WRITE: R0 = 01
-# [               30000] PC = 00
-# [               50000] REG WRITE: R0 = 01
-# [               50000] PC = 00
-# [               70000] REG WRITE: R0 = 01
-# [               70000] PC = 00
-# [               90000] REG WRITE: R0 = 01
-# [               90000] PC = 00
-# [              110000] REG WRITE: R0 = 01
-# [              110000] PC = 00
-# [              130000] REG WRITE: R0 = 01
-# [              130000] PC = 00
-# [              150000] REG WRITE: R0 = 01
-# [              150000] PC = 00
-# [              170000] REG WRITE: R0 = 01
-# [              170000] PC = 00
-# [              190000] REG WRITE: R0 = 01
-# [              190000] PC = 00
-# [              210000] REG WRITE: R0 = 01
-# [              210000] PC = 00
-# T=210000 | PC=00 | Instr=71 | LEDs=0001
-# REGS: R0=00 R1=00 R2=00 R3=00
-# [              210000] ALU: a=01 b=01 op=000
-# [              230000] REG WRITE: R0 = 02
-# [              230000] PC = 01
-# T=230000 | PC=01 | Instr=71 | LEDs=0010
-# REGS: R0=01 R1=00 R2=00 R3=00
-# [              230000] ALU: a=01 b=05 op=000
-# [              230000] ALU: a=00 b=05 op=000
-# [              250000] REG WRITE: R1 = 05
-# [              250000] PC = 02
-# T=250000 | PC=02 | Instr=75 | LEDs=0101
-# REGS: R0=02 R1=00 R2=00 R3=00
-# CTRL: op=0001 alu_op=000 reg_write=1 imm_signed=0
-# [              250000] ALU: a=00 b=04 op=000
-# [              250000] ALU: a=05 b=02 op=000
-# [              270000] REG WRITE: R1 = 07
-# [              270000] PC = 03
-# T=270000 | PC=03 | Instr=14 | LEDs=0111
-# REGS: R0=02 R1=05 R2=00 R3=00
-# CTRL: op=1111 alu_op=000 reg_write=0 imm_signed=0
-# [              270000] ALU: a=00 b=00 op=000
-# [              290000] PC = 04
-# T=290000 | PC=04 | Instr=ff | LEDs=0000
-# REGS: R0=02 R1=07 R2=00 R3=00
-# CTRL: op=0000 alu_op=000 reg_write=0 imm_signed=0
-# [              290000] ALU: a=02 b=02 op=000
-# [              310000] PC = 05
-# T=310000 | PC=05 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [              330000] PC = 06
-# T=330000 | PC=06 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [              350000] PC = 07
-# T=350000 | PC=07 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [              370000] PC = 08
-# T=370000 | PC=08 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [              390000] PC = 09
-# T=390000 | PC=09 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [              410000] PC = 0a
-# T=410000 | PC=0a | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [              430000] PC = 0b
-# T=430000 | PC=0b | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [              450000] PC = 0c
-# T=450000 | PC=0c | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [              470000] PC = 0d
-# T=470000 | PC=0d | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [              490000] PC = 0e
-# T=490000 | PC=0e | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [              510000] PC = 0f
-# T=510000 | PC=0f | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [              530000] PC = 10
-# T=530000 | PC=10 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [              550000] PC = 11
-# T=550000 | PC=11 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [              570000] PC = 12
-# T=570000 | PC=12 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [              590000] PC = 13
-# T=590000 | PC=13 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [              610000] PC = 14
-# T=610000 | PC=14 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [              630000] PC = 15
-# T=630000 | PC=15 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [              650000] PC = 16
-# T=650000 | PC=16 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [              670000] PC = 17
-# T=670000 | PC=17 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [              690000] PC = 18
-# T=690000 | PC=18 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [              710000] PC = 19
-# T=710000 | PC=19 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [              730000] PC = 1a
-# T=730000 | PC=1a | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [              750000] PC = 1b
-# T=750000 | PC=1b | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [              770000] PC = 1c
-# T=770000 | PC=1c | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [              790000] PC = 1d
-# T=790000 | PC=1d | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [              810000] PC = 1e
-# T=810000 | PC=1e | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [              830000] PC = 1f
-# T=830000 | PC=1f | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [              850000] PC = 20
-# T=850000 | PC=20 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [              870000] PC = 21
-# T=870000 | PC=21 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [              890000] PC = 22
-# T=890000 | PC=22 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [              910000] PC = 23
-# T=910000 | PC=23 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [              930000] PC = 24
-# T=930000 | PC=24 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [              950000] PC = 25
-# T=950000 | PC=25 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [              970000] PC = 26
-# T=970000 | PC=26 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [              990000] PC = 27
-# T=990000 | PC=27 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [             1010000] PC = 28
-# T=1010000 | PC=28 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [             1030000] PC = 29
-# T=1030000 | PC=29 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [             1050000] PC = 2a
-# T=1050000 | PC=2a | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [             1070000] PC = 2b
-# T=1070000 | PC=2b | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [             1090000] PC = 2c
-# T=1090000 | PC=2c | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [             1110000] PC = 2d
-# T=1110000 | PC=2d | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [             1130000] PC = 2e
-# T=1130000 | PC=2e | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [             1150000] PC = 2f
-# T=1150000 | PC=2f | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [             1170000] PC = 30
-# T=1170000 | PC=30 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# [             1190000] PC = 31
-# T=1190000 | PC=31 | Instr=00 | LEDs=0100
-# REGS: R0=02 R1=07 R2=00 R3=00
-# ❌ TEST FAILED! Final LED output: 0100
-# ** Note: $finish    : C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v(34)
-#    Time: 1200 ns  Iteration: 0  Instance: /top_tb
+# T=10000 | LEDS=0001
+# T=30000 | LEDS=0001
+# T=50000 | LEDS=0001
+# T=70000 | LEDS=0001
+# T=90000 | LEDS=0001
+# T=110000 | LEDS=0001
+# T=130000 | LEDS=0101
+# T=150000 | LEDS=0110
+# T=170000 | LEDS=1100
+# T=190000 | LEDS=1100
+# T=210000 | LEDS=1100
+# T=230000 | LEDS=1100
+# T=250000 | LEDS=1100
+# T=270000 | LEDS=1100
+# T=290000 | LEDS=1100
+# T=310000 | LEDS=1100
+# T=330000 | LEDS=1100
+# T=350000 | LEDS=1100
+# T=370000 | LEDS=1100
+# T=390000 | LEDS=1100
+# T=410000 | LEDS=1100
+# T=430000 | LEDS=1100
+# T=450000 | LEDS=1100
+# T=470000 | LEDS=1100
+# T=490000 | LEDS=1100
+# T=510000 | LEDS=1100
+# T=530000 | LEDS=1100
+# T=550000 | LEDS=1100
+# T=570000 | LEDS=1100
+# T=590000 | LEDS=1100
+# T=610000 | LEDS=1100
+# T=630000 | LEDS=1100
+# T=650000 | LEDS=1100
+# T=670000 | LEDS=1100
+# T=690000 | LEDS=1100
+# T=710000 | LEDS=1100
+# T=730000 | LEDS=1100
+# T=750000 | LEDS=1100
+# T=770000 | LEDS=1100
+# T=790000 | LEDS=1100
+# T=810000 | LEDS=1100
+# T=830000 | LEDS=1100
+# T=850000 | LEDS=1100
+# T=870000 | LEDS=1100
+# T=890000 | LEDS=1100
+# T=910000 | LEDS=1100
+# T=930000 | LEDS=1100
+# T=950000 | LEDS=1100
+# T=970000 | LEDS=1100
+# T=990000 | LEDS=1100
+# T=1010000 | LEDS=1100
+# T=1030000 | LEDS=1100
+# T=1050000 | LEDS=1100
+# T=1070000 | LEDS=1100
+# T=1090000 | LEDS=1100
+# ** Note: $finish    : C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v(24)
+#    Time: 1100 ns  Iteration: 0  Instance: /top_tb
 # 1
-# Break in Module top_tb at C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v line 34
+# Break in Module top_tb at C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v line 24

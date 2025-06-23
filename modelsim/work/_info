@@ -10,41 +10,41 @@ z2
 cModel Technology
 dC:/intelFPGA/20.1
 valu
-Z0 !s110 1750536632
+Z0 !s110 1750704645
 !i10b 1
-!s100 _kRl9a<:FLC0Y3?YQW3[_3
+!s100 95W:NQ>H6MG`3n3iSE0>?3
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-Ii8OH2JJ`UfTAk;BX4hfo_0
+IzGOGfk_3<G_>==HHhMT7I2
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 Z3 dC:/My_FPGA_Projects/Proje2_8bitCPU/modelsim
-w1750331368
+w1750704626
 8C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/alu.v
 FC:/My_FPGA_Projects/Proje2_8bitCPU/rtl/alu.v
-!i122 229
-L0 3 24
+!i122 277
+L0 3 23
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1750536632.000000
+Z5 !s108 1750704645.000000
 !s107 C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/alu.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/alu.v|
 !i113 1
 Z6 o-work work
 Z7 tCvgOpt 0
 vcontrol
-R0
+Z8 !s110 1750704646
 !i10b 1
-!s100 dKV`Wk<gFEVOmWnO0X]V=0
+!s100 E07YYPcXHBl@jA^345D1G0
 R1
-IE:jn:Ga<HfIiWM_C[i[2e2
+I`6a6O9CdUkQ[cZ8lnl`H_2
 R2
 R3
-w1750535890
+w1750704607
 8C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/control.v
 FC:/My_FPGA_Projects/Proje2_8bitCPU/rtl/control.v
-!i122 230
-L0 3 87
+!i122 278
+L0 3 42
 R4
 r1
 !s85 0
@@ -56,23 +56,23 @@ R5
 R6
 R7
 vdatapath
-Z8 !s110 1750536633
+R8
 !i10b 1
-!s100 UKWnBHS?g^DmO=Wn8F[]L1
+!s100 eO@?>=REMOaW0PnOSM9W90
 R1
-Ibm0kBa93ND>68HE3Dz]Sn2
+I98R50;QkJ7eUb=90PQC]_1
 R2
 R3
-w1750334710
+w1750704621
 8C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/datapath.v
 FC:/My_FPGA_Projects/Proje2_8bitCPU/rtl/datapath.v
-!i122 231
-L0 1 85
+!i122 279
+L0 3 59
 R4
 r1
 !s85 0
 31
-Z9 !s108 1750536633.000000
+Z9 !s108 1750704646.000000
 !s107 C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/datapath.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/datapath.v|
 !i113 1
@@ -81,16 +81,16 @@ R7
 vmemory
 R8
 !i10b 1
-!s100 DF9NG=CIIeDoQ74jRCd6`1
+!s100 55Yg9Y6^dcWiVXAC6NYQU0
 R1
-IEQoc<^6N`AYVb[<[0;G@<1
+IQz=RSi6E_Pl>[3eRQ1>dI3
 R2
 R3
-w1750536623
+w1750704613
 8C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/memory.v
 FC:/My_FPGA_Projects/Proje2_8bitCPU/rtl/memory.v
-!i122 232
-L0 1 45
+!i122 280
+L0 3 19
 R4
 r1
 !s85 0
@@ -104,16 +104,16 @@ R7
 vregister_file
 R8
 !i10b 1
-!s100 0bKooT6bHMdaX5?z>WI`81
+!s100 o@dLh[7>:Sl:50n8h6Xj80
 R1
-INCPQ?bf8LO5h^P>@?>IMn2
+IHaGKWL`aR:a^iA?PC3J?`3
 R2
 R3
-w1750535928
+w1750704637
 8C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/registerfile.v
 FC:/My_FPGA_Projects/Proje2_8bitCPU/rtl/registerfile.v
-!i122 233
-Z10 L0 3 57
+!i122 281
+L0 3 30
 R4
 r1
 !s85 0
@@ -125,17 +125,17 @@ R9
 R6
 R7
 vtop
-!s110 1750536634
+!s110 1750704647
 !i10b 1
-!s100 ;QYE2JDcO7lcY8D:`NKN;1
+!s100 P67M3<KTJX_n`RG>?_VjW1
 R1
-I1BF;U;C4M4lGfeXiiBo6]1
+IU;VO9FheljD[9[bm;ANo=2
 R2
 R3
-w1750329692
+w1750704631
 8C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v
 FC:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v
-!i122 234
+!i122 282
 L0 1 39
 R4
 r1
@@ -150,16 +150,16 @@ R7
 vtop_tb
 R0
 !i10b 1
-!s100 >MT8CRo6CHTNTlS[kJFda1
+!s100 2>g7:3j_65_>z7i`WDbk?0
 R1
-I^`c8_zb``KTfRl@4j;_FM2
+IDWz1XlMnAZ^Q66cGO2o:D0
 R2
 R3
-w1750536047
+w1750704601
 8C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v
 FC:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v
-!i122 228
-R10
+!i122 276
+L0 3 29
 R4
 r1
 !s85 0

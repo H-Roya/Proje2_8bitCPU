@@ -7,14 +7,14 @@ module memory (
 
     reg [7:0] mem [0:255];
 
-    initial begin
+    /*initial begin
         mem[0] = 8'b00010001; // LDI R0, 1
         mem[1] = 8'b00010101; // LDI R1, 5
         mem[2] = 8'b00100001; // ADD R0, R1
         mem[3] = 8'b11110000; // HALT
-    end
+    end*/
 
-    /*initial begin
+    initial begin
         mem[0] = 8'b00010010; // LDI R0, 2
         mem[1] = 8'b00010100; // LDI R1, 4
         mem[2] = 8'b00100001; // ADD R0, R1 -> R0 = 6
@@ -25,7 +25,7 @@ module memory (
         mem[7] = 8'b00011011; // LDI R2, 3
         mem[8] = 8'b01000100; // JMP to 4 (loop or test jump)
         mem[9] = 8'b11110000; // HALT (unreachable in this case)
-    end*/
+    end
 
     always @(*) begin
         data_out = mem[addr];

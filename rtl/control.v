@@ -36,6 +36,30 @@ module control (
             end
             4'b0100: jump = 1;         // JMP
             4'b0101: branch_z = 1;     // BRZ
+            4'b0110: begin // AND
+                reg_write = 1;
+                alu_op = 3'b010;
+            end
+            4'b0111: begin // OR
+                reg_write = 1;
+                alu_op = 3'b011;
+            end
+            4'b1000: begin // NOT
+                reg_write = 1;
+                alu_op = 3'b100;
+            end
+            4'b1001: begin // LT
+                reg_write = 1;
+                alu_op = 3'b101;
+            end
+            4'b1010: begin // SHL
+                reg_write = 1;
+                alu_op = 3'b110;
+            end
+            4'b1011: begin // SHR
+                reg_write = 1;
+                alu_op = 3'b111;
+            end
             4'b1111: halt = 1;         // HALT
             default: ;                 // NOP
         endcase

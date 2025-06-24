@@ -63,13 +63,38 @@ module memory (
     end*/
 
     //final test3: AND OR doesn't work. Add the opcodes.
-    initial begin
+    /*initial begin
         mem[0] = 8'b00010010; // LDI R0, 2  (0010)
         mem[1] = 8'b00010101; // LDI R1, 5  (0101)
-        mem[2] = 8'b01000001; // AND R0, R1 -> 0000
-        mem[3] = 8'b01010001; // OR R0, R1 -> 0111
+        mem[2] = 8'b01100001; // AND R0, R1 -> 0000
+        mem[3] = 8'b01110001; // OR R0, R1 -> 0111
         mem[4] = 8'b11110000; // HALT
+    end*/
+
+    /*initial begin
+        mem[0] = 8'b00010010; // LDI R0, 2  -> R0 = 0010
+        mem[1] = 8'b00010101; // LDI R1, 5  -> R1 = 0101
+        mem[2] = 8'b01110001; // OR R0, R1 -> 0010 | 0101 = 0111
+        mem[3] = 8'b11110000; // HALT
+    end*/
+
+    //STL, NOT test
+    /*initial begin
+        mem[0] = 8'b00010001; // LDI R0, 1
+        mem[1] = 8'b00010100; // LDI R1, 4
+        mem[2] = 8'b10010001; // SLT R0, R1 -> R0 < R1 -> R0 = 1
+        mem[3] = 8'b10000000; // NOT R0 -> ~00000001 = 11111110
+        mem[4] = 8'b11110000; // HALT
+    end*/
+
+    //Shift test
+    initial begin
+        mem[0] = 8'b00010001; // LDI R0, 1   (00000001)
+        mem[1] = 8'b10100000; // SHL R0      -> 00000010
+        mem[2] = 8'b10110000; // SHR R0      -> 00000001
+        mem[3] = 8'b11110000; // HALT
     end
+
 
 
 

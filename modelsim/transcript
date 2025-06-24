@@ -1,14 +1,6 @@
 # Compile of top_tb.v was successful.
 # Compile of alu.v was successful.
 # Compile of control.v was successful.
-# Compile of datapath.v failed with 1 errors.
-# Compile of memory.v was successful.
-# Compile of registerfile.v was successful.
-# Compile of top.v was successful.
-# 7 compiles, 1 failed with 1 error.
-# Compile of top_tb.v was successful.
-# Compile of alu.v was successful.
-# Compile of control.v was successful.
 # Compile of datapath.v was successful.
 # Compile of memory.v was successful.
 # Compile of registerfile.v was successful.
@@ -16,7 +8,7 @@
 # 7 compiles, 0 failed with no errors.
 vsim -gui work.top_tb
 # vsim -gui work.top_tb 
-# Start time: 22:13:15 on Jun 23,2025
+# Start time: 08:26:24 on Jun 24,2025
 # Loading work.top_tb
 # Loading work.top
 # Loading work.datapath
@@ -93,12 +85,11 @@ run -all
 # Compile of registerfile.v was successful.
 # Compile of top.v was successful.
 # 7 compiles, 0 failed with no errors.
-# Load canceled
 vsim -gui work.top_tb
-# End time: 22:16:47 on Jun 23,2025, Elapsed time: 0:03:32
-# Errors: 0, Warnings: 4
+# End time: 08:29:17 on Jun 24,2025, Elapsed time: 0:02:53
+# Errors: 0, Warnings: 3
 # vsim -gui work.top_tb 
-# Start time: 22:16:47 on Jun 23,2025
+# Start time: 08:29:17 on Jun 24,2025
 # Loading work.top_tb
 # Loading work.top
 # Loading work.datapath
@@ -108,61 +99,61 @@ vsim -gui work.top_tb
 # Loading work.control
 add wave -position insertpoint sim:/top_tb/*
 run -all
-# PC=00 | Instr=00010001 | LEDs=0001
-# PC=00 | Instr=00010001 | LEDs=0001
-# PC=00 | Instr=00010001 | LEDs=0001
-# PC=00 | Instr=00010001 | LEDs=0001
-# PC=00 | Instr=00010001 | LEDs=0001
-# PC=00 | Instr=00010001 | LEDs=0001
-# PC=01 | Instr=00010101 | LEDs=0101
+# PC=00 | Instr=00010010 | LEDs=0010
+# PC=00 | Instr=00010010 | LEDs=0010
+# PC=00 | Instr=00010010 | LEDs=0010
+# PC=00 | Instr=00010010 | LEDs=0010
+# PC=00 | Instr=00010010 | LEDs=0010
+# PC=00 | Instr=00010010 | LEDs=0010
+# PC=01 | Instr=00010100 | LEDs=0100
 # PC=02 | Instr=00100001 | LEDs=0110
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
-# PC=03 | Instr=11110000 | LEDs=1100
+# PC=03 | Instr=00110001 | LEDs=0010
+# PC=04 | Instr=01000000 | LEDs=0100
+# PC=00 | Instr=00010010 | LEDs=0100
+# PC=01 | Instr=00010100 | LEDs=1000
+# PC=02 | Instr=00100001 | LEDs=1100
+# PC=03 | Instr=00110001 | LEDs=0100
+# PC=04 | Instr=01000000 | LEDs=1000
+# PC=00 | Instr=00010010 | LEDs=0110
+# PC=01 | Instr=00010100 | LEDs=1100
+# PC=02 | Instr=00100001 | LEDs=0010
+# PC=03 | Instr=00110001 | LEDs=0110
+# PC=04 | Instr=01000000 | LEDs=1100
+# PC=00 | Instr=00010010 | LEDs=1000
+# PC=01 | Instr=00010100 | LEDs=0000
+# PC=02 | Instr=00100001 | LEDs=1000
+# PC=03 | Instr=00110001 | LEDs=1000
+# PC=04 | Instr=01000000 | LEDs=0000
+# PC=00 | Instr=00010010 | LEDs=1010
+# PC=01 | Instr=00010100 | LEDs=0100
+# PC=02 | Instr=00100001 | LEDs=1110
+# PC=03 | Instr=00110001 | LEDs=1010
+# PC=04 | Instr=01000000 | LEDs=0100
+# PC=00 | Instr=00010010 | LEDs=1100
+# PC=01 | Instr=00010100 | LEDs=1000
+# PC=02 | Instr=00100001 | LEDs=0100
+# PC=03 | Instr=00110001 | LEDs=1100
+# PC=04 | Instr=01000000 | LEDs=1000
+# PC=00 | Instr=00010010 | LEDs=1110
+# PC=01 | Instr=00010100 | LEDs=1100
+# PC=02 | Instr=00100001 | LEDs=1010
+# PC=03 | Instr=00110001 | LEDs=1110
+# PC=04 | Instr=01000000 | LEDs=1100
+# PC=00 | Instr=00010010 | LEDs=0000
+# PC=01 | Instr=00010100 | LEDs=0000
+# PC=02 | Instr=00100001 | LEDs=0000
+# PC=03 | Instr=00110001 | LEDs=0000
+# PC=04 | Instr=01000000 | LEDs=0000
+# PC=00 | Instr=00010010 | LEDs=0010
+# PC=01 | Instr=00010100 | LEDs=0100
+# PC=02 | Instr=00100001 | LEDs=0110
+# PC=03 | Instr=00110001 | LEDs=0010
+# PC=04 | Instr=01000000 | LEDs=0100
+# PC=00 | Instr=00010010 | LEDs=0100
+# PC=01 | Instr=00010100 | LEDs=1000
+# PC=02 | Instr=00100001 | LEDs=1100
+# PC=03 | Instr=00110001 | LEDs=0100
+# PC=04 | Instr=01000000 | LEDs=1000
 # ** Note: $finish    : C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v(24)
 #    Time: 1100 ns  Iteration: 0  Instance: /top_tb
 # 1
@@ -176,10 +167,10 @@ run -all
 # Compile of top.v was successful.
 # 7 compiles, 0 failed with no errors.
 vsim -gui work.top_tb
-# End time: 22:33:53 on Jun 23,2025, Elapsed time: 0:17:06
+# End time: 08:32:58 on Jun 24,2025, Elapsed time: 0:03:41
 # Errors: 0, Warnings: 2
 # vsim -gui work.top_tb 
-# Start time: 22:33:53 on Jun 23,2025
+# Start time: 08:32:58 on Jun 24,2025
 # Loading work.top_tb
 # Loading work.top
 # Loading work.datapath
@@ -189,14 +180,214 @@ vsim -gui work.top_tb
 # Loading work.control
 add wave -position insertpoint sim:/top_tb/*
 run -all
-# PC=00 | Instr=00010001 | LEDs=0001
-# PC=00 | Instr=00010001 | LEDs=0001
-# PC=00 | Instr=00010001 | LEDs=0001
-# PC=00 | Instr=00010001 | LEDs=0001
-# PC=00 | Instr=00010001 | LEDs=0001
-# PC=00 | Instr=00010001 | LEDs=0001
-# PC=01 | Instr=00010101 | LEDs=0101
+# PC=00 | Instr=00010010 | LEDs=0010
+# PC=00 | Instr=00010010 | LEDs=0010
+# PC=00 | Instr=00010010 | LEDs=0010
+# PC=00 | Instr=00010010 | LEDs=0010
+# PC=00 | Instr=00010010 | LEDs=0010
+# PC=00 | Instr=00010010 | LEDs=0010
+# PC=01 | Instr=00010100 | LEDs=0100
 # PC=02 | Instr=00100001 | LEDs=0110
+# PC=03 | Instr=00110001 | LEDs=0010
+# PC=04 | Instr=01010010 | LEDs=0010
+# PC=05 | Instr=00011011 | LEDs=1011
+# PC=06 | Instr=00011100 | LEDs=1100
+# PC=07 | Instr=01010100 | LEDs=0110
+# PC=08 | Instr=01000001 | LEDs=0110
+# PC=01 | Instr=00010100 | LEDs=1000
+# PC=02 | Instr=00100001 | LEDs=1010
+# PC=03 | Instr=00110001 | LEDs=0010
+# PC=04 | Instr=01010010 | LEDs=1101
+# PC=05 | Instr=00011011 | LEDs=0110
+# PC=06 | Instr=00011100 | LEDs=1000
+# PC=07 | Instr=01010100 | LEDs=1010
+# PC=08 | Instr=01000001 | LEDs=1010
+# PC=01 | Instr=00010100 | LEDs=1100
+# PC=02 | Instr=00100001 | LEDs=1110
+# PC=03 | Instr=00110001 | LEDs=0010
+# PC=04 | Instr=01010010 | LEDs=1000
+# PC=05 | Instr=00011011 | LEDs=0001
+# PC=06 | Instr=00011100 | LEDs=0100
+# PC=07 | Instr=01010100 | LEDs=1110
+# PC=08 | Instr=01000001 | LEDs=1110
+# PC=01 | Instr=00010100 | LEDs=0000
+# PC=02 | Instr=00100001 | LEDs=0010
+# PC=03 | Instr=00110001 | LEDs=0010
+# PC=04 | Instr=01010010 | LEDs=0011
+# PC=05 | Instr=00011011 | LEDs=1100
+# PC=06 | Instr=00011100 | LEDs=0000
+# PC=07 | Instr=01010100 | LEDs=0010
+# PC=08 | Instr=01000001 | LEDs=0010
+# PC=01 | Instr=00010100 | LEDs=0100
+# PC=02 | Instr=00100001 | LEDs=0110
+# PC=03 | Instr=00110001 | LEDs=0010
+# PC=04 | Instr=01010010 | LEDs=1110
+# PC=05 | Instr=00011011 | LEDs=0111
+# PC=06 | Instr=00011100 | LEDs=1100
+# PC=07 | Instr=01010100 | LEDs=0110
+# PC=08 | Instr=01000001 | LEDs=0110
+# PC=01 | Instr=00010100 | LEDs=1000
+# PC=02 | Instr=00100001 | LEDs=1010
+# PC=03 | Instr=00110001 | LEDs=0010
+# PC=04 | Instr=01010010 | LEDs=1001
+# PC=05 | Instr=00011011 | LEDs=0010
+# PC=06 | Instr=00011100 | LEDs=1000
+# PC=07 | Instr=01010100 | LEDs=1010
+# PC=08 | Instr=01000001 | LEDs=1010
+# PC=01 | Instr=00010100 | LEDs=1100
+# ** Note: $finish    : C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v(24)
+#    Time: 1100 ns  Iteration: 0  Instance: /top_tb
+# 1
+# Break in Module top_tb at C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v line 24
+# Compile of top_tb.v was successful.
+# Compile of alu.v was successful.
+# Compile of control.v was successful.
+# Compile of datapath.v was successful.
+# Compile of memory.v was successful.
+# Compile of registerfile.v was successful.
+# Compile of top.v was successful.
+# 7 compiles, 0 failed with no errors.
+vsim -gui work.top_tb
+# End time: 08:35:34 on Jun 24,2025, Elapsed time: 0:02:36
+# Errors: 0, Warnings: 2
+# vsim -gui work.top_tb 
+# Start time: 08:35:34 on Jun 24,2025
+# Loading work.top_tb
+# Loading work.top
+# Loading work.datapath
+# Loading work.memory
+# Loading work.register_file
+# Loading work.alu
+# Loading work.control
+add wave -position insertpoint sim:/top_tb/*
+run -all
+# PC=00 | Instr=00010010 | LEDs=0010
+# PC=00 | Instr=00010010 | LEDs=0010
+# PC=00 | Instr=00010010 | LEDs=0010
+# PC=00 | Instr=00010010 | LEDs=0010
+# PC=00 | Instr=00010010 | LEDs=0010
+# PC=00 | Instr=00010010 | LEDs=0010
+# PC=01 | Instr=00010100 | LEDs=0100
+# PC=02 | Instr=00100001 | LEDs=0110
+# PC=03 | Instr=00110001 | LEDs=0010
+# PC=04 | Instr=01010010 | LEDs=0010
+# PC=05 | Instr=00011011 | LEDs=1011
+# PC=06 | Instr=00011100 | LEDs=1100
+# PC=07 | Instr=01010100 | LEDs=0110
+# PC=08 | Instr=11110000 | LEDs=0000
+# HALT detected at PC=08, stopping simulation.
+# ** Note: $finish    : C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v(32)
+#    Time: 270 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v line 32
+# Compile of top_tb.v was successful.
+# Compile of alu.v was successful.
+# Compile of control.v was successful.
+# Compile of datapath.v was successful.
+# Compile of memory.v was successful.
+# Compile of registerfile.v was successful.
+# Compile of top.v was successful.
+# 7 compiles, 0 failed with no errors.
+vsim -gui work.top_tb
+# End time: 08:40:13 on Jun 24,2025, Elapsed time: 0:04:39
+# Errors: 0, Warnings: 2
+# vsim -gui work.top_tb 
+# Start time: 08:40:13 on Jun 24,2025
+# Loading work.top_tb
+# Loading work.top
+# Loading work.datapath
+# Loading work.memory
+# Loading work.register_file
+# Loading work.alu
+# Loading work.control
+add wave -position insertpoint sim:/top_tb/*
+run -all
+# PC=00 | Instr=01000010 | LEDs=0000
+# PC=00 | Instr=01000010 | LEDs=0000
+# PC=00 | Instr=01000010 | LEDs=0000
+# PC=00 | Instr=01000010 | LEDs=0000
+# PC=00 | Instr=01000010 | LEDs=0000
+# PC=00 | Instr=01000010 | LEDs=0000
+# PC=02 | Instr=00010011 | LEDs=0011
+# PC=03 | Instr=11110000 | LEDs=0000
+# HALT detected at PC=03, stopping simulation.
+# ** Note: $finish    : C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v(32)
+#    Time: 150 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v line 32
+# Compile of top_tb.v was successful.
+# Compile of alu.v was successful.
+# Compile of control.v was successful.
+# Compile of datapath.v was successful.
+# Compile of memory.v was successful.
+# Compile of registerfile.v was successful.
+# Compile of top.v was successful.
+# 7 compiles, 0 failed with no errors.
+vsim -gui work.top_tb
+# End time: 08:43:07 on Jun 24,2025, Elapsed time: 0:02:54
+# Errors: 0, Warnings: 2
+# vsim -gui work.top_tb 
+# Start time: 08:43:07 on Jun 24,2025
+# Loading work.top_tb
+# Loading work.top
+# Loading work.datapath
+# Loading work.memory
+# Loading work.register_file
+# Loading work.alu
+# Loading work.control
+add wave -position insertpoint sim:/top_tb/*
+run -all
+# PC=00 | Instr=00010000 | LEDs=0000
+# PC=00 | Instr=00010000 | LEDs=0000
+# PC=00 | Instr=00010000 | LEDs=0000
+# PC=00 | Instr=00010000 | LEDs=0000
+# PC=00 | Instr=00010000 | LEDs=0000
+# PC=00 | Instr=00010000 | LEDs=0000
+# PC=01 | Instr=01010010 | LEDs=0000
+# PC=02 | Instr=00010011 | LEDs=0011
+# PC=03 | Instr=11110000 | LEDs=0000
+# HALT detected at PC=03, stopping simulation.
+# ** Note: $finish    : C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v(32)
+#    Time: 170 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v line 32
+run -all
+# PC=03 | Instr=11110000 | LEDs=0000
+# HALT detected at PC=03, stopping simulation.
+# ** Note: $finish    : C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v(32)
+#    Time: 190 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v line 32
+# Compile of top_tb.v was successful.
+# Compile of alu.v was successful.
+# Compile of control.v was successful.
+# Compile of datapath.v was successful.
+# Compile of memory.v was successful.
+# Compile of registerfile.v was successful.
+# Compile of top.v was successful.
+# 7 compiles, 0 failed with no errors.
+vsim -gui work.top_tb
+# End time: 08:45:34 on Jun 24,2025, Elapsed time: 0:02:27
+# Errors: 0, Warnings: 2
+# vsim -gui work.top_tb 
+# Start time: 08:45:34 on Jun 24,2025
+# Loading work.top_tb
+# Loading work.top
+# Loading work.datapath
+# Loading work.memory
+# Loading work.register_file
+# Loading work.alu
+# Loading work.control
+add wave -position insertpoint sim:/top_tb/*
+run -all
+# PC=00 | Instr=00010000 | LEDs=0000
+# PC=00 | Instr=00010000 | LEDs=0000
+# PC=00 | Instr=00010000 | LEDs=0000
+# PC=00 | Instr=00010000 | LEDs=0000
+# PC=00 | Instr=00010000 | LEDs=0000
+# PC=00 | Instr=00010000 | LEDs=0000
+# PC=01 | Instr=01010010 | LEDs=0000
+# PC=02 | Instr=00010011 | LEDs=0011
 # PC=03 | Instr=11110000 | LEDs=0000
 # HALT detected at PC=03, stopping simulation.
 # ** Note: $finish    : C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v(32)
@@ -212,10 +403,10 @@ run -all
 # Compile of top.v was successful.
 # 7 compiles, 0 failed with no errors.
 vsim -gui work.top_tb
-# End time: 22:52:47 on Jun 23,2025, Elapsed time: 0:18:54
+# End time: 08:54:37 on Jun 24,2025, Elapsed time: 0:09:03
 # Errors: 0, Warnings: 2
 # vsim -gui work.top_tb 
-# Start time: 22:52:47 on Jun 23,2025
+# Start time: 08:54:37 on Jun 24,2025
 # Loading work.top_tb
 # Loading work.top
 # Loading work.datapath
@@ -231,55 +422,127 @@ run -all
 # PC=00 | Instr=00010010 | LEDs=0010
 # PC=00 | Instr=00010010 | LEDs=0010
 # PC=00 | Instr=00010010 | LEDs=0010
-# PC=01 | Instr=00010100 | LEDs=0100
-# PC=02 | Instr=00100001 | LEDs=0110
-# PC=03 | Instr=00110001 | LEDs=0010
-# PC=04 | Instr=01000001 | LEDs=0110
-# PC=01 | Instr=00010100 | LEDs=1000
-# PC=02 | Instr=00100001 | LEDs=1010
-# PC=03 | Instr=00110001 | LEDs=0010
-# PC=04 | Instr=01000001 | LEDs=1010
-# PC=01 | Instr=00010100 | LEDs=1100
-# PC=02 | Instr=00100001 | LEDs=1110
-# PC=03 | Instr=00110001 | LEDs=0010
-# PC=04 | Instr=01000001 | LEDs=1110
-# PC=01 | Instr=00010100 | LEDs=0000
-# PC=02 | Instr=00100001 | LEDs=0010
-# PC=03 | Instr=00110001 | LEDs=0010
-# PC=04 | Instr=01000001 | LEDs=0010
-# PC=01 | Instr=00010100 | LEDs=0100
-# PC=02 | Instr=00100001 | LEDs=0110
-# PC=03 | Instr=00110001 | LEDs=0010
-# PC=04 | Instr=01000001 | LEDs=0110
-# PC=01 | Instr=00010100 | LEDs=1000
-# PC=02 | Instr=00100001 | LEDs=1010
-# PC=03 | Instr=00110001 | LEDs=0010
-# PC=04 | Instr=01000001 | LEDs=1010
-# PC=01 | Instr=00010100 | LEDs=1100
-# PC=02 | Instr=00100001 | LEDs=1110
-# PC=03 | Instr=00110001 | LEDs=0010
-# PC=04 | Instr=01000001 | LEDs=1110
-# PC=01 | Instr=00010100 | LEDs=0000
-# PC=02 | Instr=00100001 | LEDs=0010
-# PC=03 | Instr=00110001 | LEDs=0010
-# PC=04 | Instr=01000001 | LEDs=0010
-# PC=01 | Instr=00010100 | LEDs=0100
-# PC=02 | Instr=00100001 | LEDs=0110
-# PC=03 | Instr=00110001 | LEDs=0010
-# PC=04 | Instr=01000001 | LEDs=0110
-# PC=01 | Instr=00010100 | LEDs=1000
-# PC=02 | Instr=00100001 | LEDs=1010
-# PC=03 | Instr=00110001 | LEDs=0010
-# PC=04 | Instr=01000001 | LEDs=1010
-# PC=01 | Instr=00010100 | LEDs=1100
-# PC=02 | Instr=00100001 | LEDs=1110
-# PC=03 | Instr=00110001 | LEDs=0010
-# PC=04 | Instr=01000001 | LEDs=1110
-# PC=01 | Instr=00010100 | LEDs=0000
-# PC=02 | Instr=00100001 | LEDs=0010
-# PC=03 | Instr=00110001 | LEDs=0010
-# PC=04 | Instr=01000001 | LEDs=0010
-# PC=01 | Instr=00010100 | LEDs=0100
+# PC=01 | Instr=01010011 | LEDs=0010
+# PC=02 | Instr=00010100 | LEDs=0100
+# PC=03 | Instr=11110000 | LEDs=0000
+# HALT detected at PC=03, stopping simulation.
+# ** Note: $finish    : C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v(32)
+#    Time: 170 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v line 32
+# Compile of top_tb.v was successful.
+# Compile of alu.v was successful.
+# Compile of control.v was successful.
+# Compile of datapath.v was successful.
+# Compile of memory.v was successful.
+# Compile of registerfile.v was successful.
+# Compile of top.v was successful.
+# 7 compiles, 0 failed with no errors.
+vsim -gui work.top_tb
+# End time: 08:56:29 on Jun 24,2025, Elapsed time: 0:01:52
+# Errors: 0, Warnings: 2
+# vsim -gui work.top_tb 
+# Start time: 08:56:29 on Jun 24,2025
+# Loading work.top_tb
+# Loading work.top
+# Loading work.datapath
+# Loading work.memory
+# Loading work.register_file
+# Loading work.alu
+# Loading work.control
+add wave -position insertpoint sim:/top_tb/*
+run -all
+# PC=00 | Instr=00010011 | LEDs=0011
+# PC=00 | Instr=00010011 | LEDs=0011
+# PC=00 | Instr=00010011 | LEDs=0011
+# PC=00 | Instr=00010011 | LEDs=0011
+# PC=00 | Instr=00010011 | LEDs=0011
+# PC=00 | Instr=00010011 | LEDs=0011
+# PC=01 | Instr=00110000 | LEDs=0000
+# PC=02 | Instr=01010011 | LEDs=0000
+# PC=03 | Instr=11110000 | LEDs=0000
+# HALT detected at PC=03, stopping simulation.
+# ** Note: $finish    : C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v(32)
+#    Time: 170 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v line 32
+# Compile of top_tb.v was successful.
+# Compile of alu.v was successful.
+# Compile of control.v was successful.
+# Compile of datapath.v was successful.
+# Compile of memory.v was successful.
+# Compile of registerfile.v was successful.
+# Compile of top.v was successful.
+# 7 compiles, 0 failed with no errors.
+vsim -gui work.top_tb
+# End time: 08:57:58 on Jun 24,2025, Elapsed time: 0:01:29
+# Errors: 0, Warnings: 2
+# vsim -gui work.top_tb 
+# Start time: 08:57:58 on Jun 24,2025
+# Loading work.top_tb
+# Loading work.top
+# Loading work.datapath
+# Loading work.memory
+# Loading work.register_file
+# Loading work.alu
+# Loading work.control
+add wave -position insertpoint sim:/top_tb/*
+run -all
+# PC=00 | Instr=00010010 | LEDs=0010
+# PC=00 | Instr=00010010 | LEDs=0010
+# PC=00 | Instr=00010010 | LEDs=0010
+# PC=00 | Instr=00010010 | LEDs=0010
+# PC=00 | Instr=00010010 | LEDs=0010
+# PC=00 | Instr=00010010 | LEDs=0010
+# PC=01 | Instr=00010101 | LEDs=0101
+# PC=02 | Instr=01000001 | LEDs=0111
+# PC=01 | Instr=00010101 | LEDs=1010
+# PC=02 | Instr=01000001 | LEDs=1100
+# PC=01 | Instr=00010101 | LEDs=1111
+# PC=02 | Instr=01000001 | LEDs=0001
+# PC=01 | Instr=00010101 | LEDs=0100
+# PC=02 | Instr=01000001 | LEDs=0110
+# PC=01 | Instr=00010101 | LEDs=1001
+# PC=02 | Instr=01000001 | LEDs=1011
+# PC=01 | Instr=00010101 | LEDs=1110
+# PC=02 | Instr=01000001 | LEDs=0000
+# PC=01 | Instr=00010101 | LEDs=0011
+# PC=02 | Instr=01000001 | LEDs=0101
+# PC=01 | Instr=00010101 | LEDs=1000
+# PC=02 | Instr=01000001 | LEDs=1010
+# PC=01 | Instr=00010101 | LEDs=1101
+# PC=02 | Instr=01000001 | LEDs=1111
+# PC=01 | Instr=00010101 | LEDs=0010
+# PC=02 | Instr=01000001 | LEDs=0100
+# PC=01 | Instr=00010101 | LEDs=0111
+# PC=02 | Instr=01000001 | LEDs=1001
+# PC=01 | Instr=00010101 | LEDs=1100
+# PC=02 | Instr=01000001 | LEDs=1110
+# PC=01 | Instr=00010101 | LEDs=0001
+# PC=02 | Instr=01000001 | LEDs=0011
+# PC=01 | Instr=00010101 | LEDs=0110
+# PC=02 | Instr=01000001 | LEDs=1000
+# PC=01 | Instr=00010101 | LEDs=1011
+# PC=02 | Instr=01000001 | LEDs=1101
+# PC=01 | Instr=00010101 | LEDs=0000
+# PC=02 | Instr=01000001 | LEDs=0010
+# PC=01 | Instr=00010101 | LEDs=0101
+# PC=02 | Instr=01000001 | LEDs=0111
+# PC=01 | Instr=00010101 | LEDs=1010
+# PC=02 | Instr=01000001 | LEDs=1100
+# PC=01 | Instr=00010101 | LEDs=1111
+# PC=02 | Instr=01000001 | LEDs=0001
+# PC=01 | Instr=00010101 | LEDs=0100
+# PC=02 | Instr=01000001 | LEDs=0110
+# PC=01 | Instr=00010101 | LEDs=1001
+# PC=02 | Instr=01000001 | LEDs=1011
+# PC=01 | Instr=00010101 | LEDs=1110
+# PC=02 | Instr=01000001 | LEDs=0000
+# PC=01 | Instr=00010101 | LEDs=0011
+# PC=02 | Instr=01000001 | LEDs=0101
+# PC=01 | Instr=00010101 | LEDs=1000
+# PC=02 | Instr=01000001 | LEDs=1010
+# PC=01 | Instr=00010101 | LEDs=1101
 # ** Note: $finish    : C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v(24)
 #    Time: 1100 ns  Iteration: 0  Instance: /top_tb
 # 1

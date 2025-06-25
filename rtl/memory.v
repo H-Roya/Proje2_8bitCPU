@@ -8,15 +8,15 @@ module memory (
     reg [7:0] mem [0:255];
 
     //add testing
-    /*initial begin
+    initial begin
         mem[0] = 8'b00010001; // LDI R0, 1
         mem[1] = 8'b00010101; // LDI R1, 5
         mem[2] = 8'b00100001; // ADD R0, R1
         mem[3] = 8'b11110000; // HALT
-    end*/
+    end
 
     //branch testing doesn't branch
-    initial begin
+    /*initial begin
         mem[0] = 8'b00010010; // LDI R0, 2
         mem[1] = 8'b00010100; // LDI R1, 4
         mem[2] = 8'b00100001; // ADD R0, R1 -> R0 = 6
@@ -26,7 +26,7 @@ module memory (
         mem[6] = 8'b00011100; // LDI R3, 4
         mem[7] = 8'b01010100; // BRZ 4 (should not branch)
         mem[8] = 8'b11110000; // HALT
-    end
+    end*/
 
     //jump testing
     /*initial begin

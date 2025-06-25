@@ -27,7 +27,7 @@ module datapath (
         .data_out(instr)
     );
 
-    register_file u_reg (
+    registerfile u_reg (
         .clk(clk),
         .reset(reset),
         .write_enable(reg_write),

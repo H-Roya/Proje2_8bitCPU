@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module register_file (
+module registerfile (
     input  wire clk,
     input  wire reset,
     input  wire write_enable,

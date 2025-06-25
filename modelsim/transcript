@@ -452,3 +452,5 @@ run -all
 #    Time: 170 ns  Iteration: 1  Instance: /top_tb
 # 1
 # Break in Module top_tb at C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v line 32
+# End time: 13:53:29 on Jun 25,2025, Elapsed time: 0:08:36
+# Errors: 0, Warnings: 1

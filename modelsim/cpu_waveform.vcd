@@ -147,4 +147,369 @@ $var wire 1 ' clk $end
 $var wire 1 ( reset $end
 $var wire 1 9 write_enable $end
 $var wire 1 - write_addr [1] $end
-$var wire 1 . write_addr [0] $
+$var wire 1 . write_addr [0] $end
+$var wire 1 j write_data [7] $end
+$var wire 1 k write_data [6] $end
+$var wire 1 l write_data [5] $end
+$var wire 1 m write_data [4] $end
+$var wire 1 n write_data [3] $end
+$var wire 1 o write_data [2] $end
+$var wire 1 p write_data [1] $end
+$var wire 1 q write_data [0] $end
+$var wire 1 - read_addr1 [1] $end
+$var wire 1 . read_addr1 [0] $end
+$var wire 1 / read_addr2 [1] $end
+$var wire 1 0 read_addr2 [0] $end
+$var reg 8 ~ read_data1 [7:0] $end
+$var reg 8 !! read_data2 [7:0] $end
+$var integer 32 "! i $end
+$upscope $end
+
+$scope module u_alu $end
+$var wire 1 R a [7] $end
+$var wire 1 S a [6] $end
+$var wire 1 T a [5] $end
+$var wire 1 U a [4] $end
+$var wire 1 V a [3] $end
+$var wire 1 W a [2] $end
+$var wire 1 X a [1] $end
+$var wire 1 Y a [0] $end
+$var wire 1 b b [7] $end
+$var wire 1 c b [6] $end
+$var wire 1 d b [5] $end
+$var wire 1 e b [4] $end
+$var wire 1 f b [3] $end
+$var wire 1 g b [2] $end
+$var wire 1 h b [1] $end
+$var wire 1 i b [0] $end
+$var wire 1 @ alu_op [2] $end
+$var wire 1 A alu_op [1] $end
+$var wire 1 B alu_op [0] $end
+$var reg 8 #! result [7:0] $end
+$var wire 1 r zero $end
+$var wire 1 s negative $end
+$var wire 1 t carry_out $end
+$var reg 9 $! temp [8:0] $end
+$upscope $end
+$upscope $end
+
+$scope module u_control $end
+$var wire 1 ) instr [7] $end
+$var wire 1 * instr [6] $end
+$var wire 1 + instr [5] $end
+$var wire 1 , instr [4] $end
+$var wire 1 - instr [3] $end
+$var wire 1 . instr [2] $end
+$var wire 1 / instr [1] $end
+$var wire 1 0 instr [0] $end
+$var reg 1 %! reg_write $end
+$var reg 1 &! alu_src $end
+$var reg 3 '! alu_op [2:0] $end
+$var reg 1 (! jump $end
+$var reg 1 )! branch_z $end
+$var reg 1 *! branch_n $end
+$var reg 1 +! branch_c $end
+$var reg 1 ,! halt $end
+$var wire 1 -! opcode [3] $end
+$var wire 1 .! opcode [2] $end
+$var wire 1 /! opcode [1] $end
+$var wire 1 0! opcode [0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+1"
+b0 N
+0O
+0P
+0Q
+b10001 }
+b0 ~
+b0 !!
+b1 #!
+b1 $!
+1%!
+1&!
+b0 '!
+0(!
+0)!
+0*!
+0+!
+0,!
+b100 "!
+1&
+0%
+0$
+0#
+10
+0/
+0.
+0-
+1,
+0+
+0*
+0)
+18
+07
+06
+05
+04
+03
+02
+01
+19
+1:
+0;
+0<
+0=
+0>
+0?
+0B
+0A
+0@
+0J
+0I
+0H
+0G
+0F
+0E
+0D
+0C
+0K
+0L
+0M
+0Y
+0X
+0W
+0V
+0U
+0T
+0S
+0R
+0a
+0`
+0_
+0^
+0]
+0\
+0[
+0Z
+1i
+0h
+0g
+0f
+0e
+0d
+0c
+0b
+1q
+0p
+0o
+0n
+0m
+0l
+0k
+0j
+0r
+0s
+0t
+10!
+0/!
+0.!
+0-!
+1(
+0'
+0|
+0{
+0z
+0y
+0x
+0w
+0v
+0u
+$end
+#10000
+1!
+1'
+b0 "!
+b1 "!
+b10 "!
+b11 "!
+b100 "!
+#20000
+0!
+0'
+#30000
+1!
+1'
+b0 "!
+b1 "!
+b10 "!
+b11 "!
+b100 "!
+#40000
+0!
+0'
+#50000
+1!
+1'
+b0 "!
+b1 "!
+b10 "!
+b11 "!
+b100 "!
+#60000
+0!
+0'
+#70000
+1!
+1'
+b0 "!
+b1 "!
+b10 "!
+b11 "!
+b100 "!
+#80000
+0!
+0'
+#90000
+1!
+1'
+b0 "!
+b1 "!
+b10 "!
+b11 "!
+b100 "!
+#100000
+0"
+0!
+0(
+0'
+#110000
+1!
+1'
+b1 N
+1J
+1|
+b10101 }
+b1 ~
+1Y
+1.
+1g
+b0 ~
+b110 $!
+b110 #!
+0q
+1p
+1o
+08
+17
+16
+0&
+1%
+1$
+0Y
+b101 $!
+b101 #!
+1q
+0p
+18
+07
+1&
+0%
+#120000
+0!
+0'
+#130000
+1!
+1'
+b10 N
+0J
+1I
+0|
+1{
+b100001 }
+b101 ~
+b101 !!
+1a
+1_
+1Y
+1W
+0.
+0,
+1+
+00!
+1/!
+0g
+0%!
+0&!
+1%!
+b1 ~
+b110 $!
+b110 #!
+0:
+0q
+1p
+08
+17
+0&
+1%
+1g
+0W
+#140000
+0!
+0'
+#150000
+1!
+1'
+b11 N
+1J
+1|
+b11110000 }
+b110 ~
+0Y
+1X
+1W
+00
+1,
+1*
+1)
+10!
+1.!
+1-!
+0%!
+1,!
+b110 !!
+b1011 $!
+b1011 #!
+09
+1?
+1q
+0o
+1n
+0a
+1`
+18
+06
+15
+0%
+0$
+0i
+1h
+b1100 $!
+b1100 #!
+0q
+0p
+1o
+08
+07
+16
+#160000
+0!
+0'
+#170000
+1!
+1'

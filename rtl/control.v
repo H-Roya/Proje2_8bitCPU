@@ -7,6 +7,8 @@ module control (
     output reg  [2:0] alu_op,
     output reg  jump,
     output reg  branch_z,
+    output reg branch_n,
+    output reg branch_c,
     output reg  halt
 );
 
@@ -18,6 +20,8 @@ module control (
         alu_op = 3'b000;
         jump = 0;
         branch_z = 0;
+        branch_n = 0;
+        branch_c = 0;
         halt = 0;
 
         case (opcode)
@@ -60,6 +64,8 @@ module control (
                 reg_write = 1;
                 alu_op = 3'b111;
             end
+            4'b1100: branch_n = 1;     //BRN
+            4'b1101: branch_c = 1;     //BRC
             4'b1111: halt = 1;         // HALT
             default: ;                 // NOP
         endcase

@@ -8,12 +8,12 @@ module memory (
     reg [7:0] mem [0:255];
 
     //add testing
-    /*initial begin
+    initial begin
         mem[0] = 8'b00010001; // LDI R0, 1
         mem[1] = 8'b00010101; // LDI R1, 5
         mem[2] = 8'b00100001; // ADD R0, R1
         mem[3] = 8'b11110000; // HALT
-    end*/
+    end
 
     //branch testing doesn't branch
     /*initial begin
@@ -105,7 +105,7 @@ module memory (
     end*/
 
     //N/C flag test
-    initial begin
+    /*initial begin
         mem[0] = 8'b00010001; // LDI R0, 1       ; R0 = 1
         mem[1] = 8'b00010111; // LDI R1, 7       ; R1 = 7
         mem[2] = 8'b00110000; // SUB R0, R0      ; R0 - R0 = 0 → Z=1, N=0, C=0
@@ -113,7 +113,39 @@ module memory (
         mem[4] = 8'b00011111; // LDI R3, 255     ; R3 = 255
         mem[5] = 8'b00100011; // ADD R3, R0      ; 255 + 249 = overflow → Z=?, N=?, C=1
         mem[6] = 8'b11110000; // HALT
-    end
+    end*/
+
+    //Test for BRN doesn't jump
+    /*initial begin
+        mem[0] = 8'b00010001; // LDI R0, 1
+        mem[1] = 8'b00110000; // SUB R0, R0
+        mem[2] = 8'b11000011; // BRN to address 3 (won't branch, N=0)
+        mem[3] = 8'b00111100; // SUB R0, R0 (again, Z=1)
+        mem[4] = 8'b11110000; // HALT
+    end*/
+
+    //Test for BRN jumps
+    /*initial begin
+        mem[0] = 8'b00010000; // LDI R0, 0
+        mem[1] = 8'b00010111; // LDI R1, 7
+        mem[2] = 8'b00110001; // SUB R0, R1  => 0 - 7 = negative
+        mem[3] = 8'b11000101; // BRN 5 => should jump to 5
+        mem[4] = 8'b11110000; // HALT (should be skipped)
+        mem[5] = 8'b00010100; // LDI R1, 4 (should run if BRN worked)
+        mem[6] = 8'b11110000; // HALT
+    end*/
+
+    //Test for BRC
+    /*initial begin
+        mem[0] = 8'b00010001; // LDI R0, 1
+        mem[1] = 8'b00010111; // LDI R1, 7
+        mem[2] = 8'b00110000; // SUB R0, R0 => 0, Z=1
+        mem[3] = 8'b00111100; // SUB R0, R0 => 0, Z=1
+        mem[4] = 8'b00011111; // SUB R0, R7 => 0 - 15 => N=1, C=1
+        mem[5] = 8'b11010110; // BRC 6 => should jump here due to carry
+        mem[6] = 8'b11110000; // HALT (should be executed if branch worked)
+        mem[7] = 8'b00010011; // LDI R0, 3 (should be skipped)
+    end*/
 
 
     always @(*) begin

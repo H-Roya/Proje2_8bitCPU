@@ -8,6 +8,8 @@ module datapath (
     input  wire [2:0] alu_op,
     input  wire jump,
     input  wire branch_z,
+    input wire branch_n,
+    input wire branch_c,
     input  wire halt,
     output wire [7:0] instr,
     output wire [7:0] result_out,
@@ -63,6 +65,10 @@ module datapath (
             else if (jump)
                 pc <= {4'b0000, instr[3:0]};
             else if (branch_z && z_flag)
+                pc <= {4'b0000, instr[3:0]};
+            else if (branch_n && n_flag)
+                pc <= {4'b0000, instr[3:0]};
+            else if (branch_c && c_flag)
                 pc <= {4'b0000, instr[3:0]};
             else
                 pc <= pc + 1;

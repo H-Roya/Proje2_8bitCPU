@@ -6,7 +6,7 @@ module top (
 
     wire [7:0] instr;
     wire [7:0] result_out;
-    wire reg_write, alu_src, jump, branch_z, halt;
+    wire reg_write, alu_src, jump, branch_z, branch_n, branch_c, halt;
     wire [2:0] alu_op;
     wire [7:0] pc_debug;
 
@@ -20,6 +20,8 @@ module top (
         .alu_op(alu_op),
         .jump(jump),
         .branch_z(branch_z),
+        .branch_n(branch_n),
+        .branch_c(branch_c),
         .halt(halt),
         .instr(instr),
         .result_out(result_out),
@@ -36,6 +38,8 @@ module top (
         .alu_op(alu_op),
         .jump(jump),
         .branch_z(branch_z),
+        .branch_n(branch_n),
+        .branch_c(branch_c),
         .halt(halt)
     );
 

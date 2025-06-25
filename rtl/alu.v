@@ -14,12 +14,12 @@ module alu (
         case (alu_op)
             3'b000: temp = a + b;             // ADD
             3'b001: temp = {1'b0, a} - b;     // SUB
-            3'b010: temp = {1'b0, a & b};
-            3'b011: temp = {1'b0, a | b};
-            3'b100: temp = {1'b0, ~a};
-            3'b101: temp = {8'b0, (a < b)};
-            3'b110: temp = {1'b0, a << 1};
-            3'b111: temp = {1'b0, a >> 1};
+            3'b010: temp = {1'b0, a & b};     // AND
+            3'b011: temp = {1'b0, a | b};     // OR
+            3'b100: temp = {1'b0, ~a};        // NOT
+            3'b101: temp = {8'b0, (a < b)};   // SLT
+            3'b110: temp = {1'b0, a << 1};    // SHL
+            3'b111: temp = {1'b0, a >> 1};    // SHR
             default: temp = 9'b0;
         endcase
         result = temp[7:0];

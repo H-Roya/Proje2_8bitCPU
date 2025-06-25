@@ -10,6 +10,8 @@ module top (
     wire [2:0] alu_op;
     wire [7:0] pc_debug;
 
+    wire z_flag, n_flag, c_flag;
+
     datapath u_datapath (
         .clk(clk),
         .reset(reset),
@@ -21,7 +23,10 @@ module top (
         .halt(halt),
         .instr(instr),
         .result_out(result_out),
-        .pc(pc_debug)
+        .pc(pc_debug),
+        .z_flag(z_flag),
+        .n_flag(n_flag),
+        .c_flag(c_flag)
     );
 
     control u_control (

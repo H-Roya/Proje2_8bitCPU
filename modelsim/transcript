@@ -8,7 +8,7 @@
 # 7 compiles, 0 failed with no errors.
 vsim -gui work.top_tb
 # vsim -gui work.top_tb 
-# Start time: 21:49:18 on Jun 24,2025
+# Start time: 13:06:27 on Jun 25,2025
 # Loading work.top_tb
 # Loading work.top
 # Loading work.datapath
@@ -29,14 +29,154 @@ run -all
 # PC=00 | Instr=00010001 | LEDs=0001
 # PC=00 | Instr=00010001 | LEDs=0001
 # PC=00 | Instr=00010001 | LEDs=0001
-# PC=01 | Instr=00010101 | LEDs=0101
-# PC=02 | Instr=00100001 | LEDs=0110
-# PC=03 | Instr=11110000 | LEDs=0000
-# PC=03 | Instr=11110000 | LEDs=0000 | Z=0 N=0 C=0
-# HALT detected at PC=03, stopping simulation.
+# PC=01 | Instr=00010111 | LEDs=0111
+# PC=02 | Instr=00110000 | LEDs=0000
+# PC=03 | Instr=00110001 | LEDs=1001
+# PC=04 | Instr=00011111 | LEDs=1111
+# PC=05 | Instr=00100011 | LEDs=1000
+# PC=06 | Instr=11110000 | LEDs=0000
+# PC=06 | Instr=11110000 | LEDs=0000 | Z=0 N=0 C=1
+# HALT detected at PC=06, stopping simulation.
 # ** Note: $finish    : C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v(33)
-#    Time: 170 ns  Iteration: 1  Instance: /top_tb
+#    Time: 230 ns  Iteration: 1  Instance: /top_tb
 # 1
 # Break in Module top_tb at C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v line 33
-# End time: 21:53:56 on Jun 24,2025, Elapsed time: 0:04:38
+# Compile of top_tb.v was successful.
+# Compile of alu.v was successful.
+# Compile of control.v was successful.
+# Compile of datapath.v was successful.
+# Compile of memory.v was successful.
+# Compile of registerfile.v was successful.
+# Compile of top.v was successful.
+# 7 compiles, 0 failed with no errors.
+vsim -gui work.top_tb
+# End time: 13:08:56 on Jun 25,2025, Elapsed time: 0:02:29
+# Errors: 0, Warnings: 7
+# vsim -gui work.top_tb 
+# Start time: 13:08:56 on Jun 25,2025
+# Loading work.top_tb
+# Loading work.top
+# Loading work.datapath
+# Loading work.memory
+# Loading work.register_file
+# Loading work.alu
+# Loading work.control
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'u_datapath'.  Expected 14, found 11.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 13
+# ** Warning: (vsim-3722) C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v(13): [TFMPC] - Missing connection for port 'z_flag'.
+# ** Warning: (vsim-3722) C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v(13): [TFMPC] - Missing connection for port 'n_flag'.
+# ** Warning: (vsim-3722) C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v(13): [TFMPC] - Missing connection for port 'c_flag'.
+add wave -position insertpoint sim:/top_tb/*
+run -all
+# PC=00 | Instr=00010001 | LEDs=0001
+# PC=00 | Instr=00010001 | LEDs=0001 | Z=0 N=0 C=0
+# PC=00 | Instr=00010001 | LEDs=0001
+# PC=00 | Instr=00010001 | LEDs=0001 | Z=0 N=0 C=0
+# PC=00 | Instr=00010001 | LEDs=0001
+# PC=00 | Instr=00010001 | LEDs=0001 | Z=0 N=0 C=0
+# PC=00 | Instr=00010001 | LEDs=0001
+# PC=00 | Instr=00010001 | LEDs=0001 | Z=0 N=0 C=0
+# PC=00 | Instr=00010001 | LEDs=0001
+# PC=00 | Instr=00010001 | LEDs=0001 | Z=0 N=0 C=0
+# PC=00 | Instr=00010001 | LEDs=0001
+# PC=00 | Instr=00010001 | LEDs=0001 | Z=0 N=0 C=0
+# PC=01 | Instr=00010111 | LEDs=0111
+# PC=01 | Instr=00010111 | LEDs=0111 | Z=0 N=0 C=0
+# PC=02 | Instr=00110000 | LEDs=0000
+# PC=02 | Instr=00110000 | LEDs=0000 | Z=0 N=0 C=0
+# PC=03 | Instr=00110001 | LEDs=1001
+# PC=03 | Instr=00110001 | LEDs=1001 | Z=1 N=0 C=0
+# PC=04 | Instr=00011111 | LEDs=1111
+# PC=04 | Instr=00011111 | LEDs=1111 | Z=0 N=1 C=1
+# PC=05 | Instr=00100011 | LEDs=1000
+# PC=05 | Instr=00100011 | LEDs=1000 | Z=0 N=0 C=0
+# PC=06 | Instr=11110000 | LEDs=0000
+# PC=06 | Instr=11110000 | LEDs=0000 | Z=0 N=0 C=1
+# HALT detected at PC=06, stopping simulation.
+# ** Note: $finish    : C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v(32)
+#    Time: 230 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v line 32
+# Compile of top_tb.v was successful.
+# Compile of alu.v was successful.
+# Compile of control.v was successful.
+# Compile of datapath.v was successful.
+# Compile of memory.v was successful.
+# Compile of registerfile.v was successful.
+# Compile of top.v was successful.
+# 7 compiles, 0 failed with no errors.
+vsim -gui work.top_tb
+# End time: 13:10:30 on Jun 25,2025, Elapsed time: 0:01:34
 # Errors: 0, Warnings: 6
+# vsim -gui work.top_tb 
+# Start time: 13:10:30 on Jun 25,2025
+# Loading work.top_tb
+# Loading work.top
+# Loading work.datapath
+# Loading work.memory
+# Loading work.register_file
+# Loading work.alu
+# Loading work.control
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'u_datapath'.  Expected 14, found 11.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/u_datapath File: C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v Line: 13
+# ** Warning: (vsim-3722) C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v(13): [TFMPC] - Missing connection for port 'z_flag'.
+# ** Warning: (vsim-3722) C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v(13): [TFMPC] - Missing connection for port 'n_flag'.
+# ** Warning: (vsim-3722) C:/My_FPGA_Projects/Proje2_8bitCPU/rtl/top.v(13): [TFMPC] - Missing connection for port 'c_flag'.
+add wave -position insertpoint sim:/top_tb/*
+run -all
+# PC=00 | Instr=00010001 | LEDs=0001 | Z=0 N=0 C=0
+# PC=00 | Instr=00010001 | LEDs=0001 | Z=0 N=0 C=0
+# PC=00 | Instr=00010001 | LEDs=0001 | Z=0 N=0 C=0
+# PC=00 | Instr=00010001 | LEDs=0001 | Z=0 N=0 C=0
+# PC=00 | Instr=00010001 | LEDs=0001 | Z=0 N=0 C=0
+# PC=00 | Instr=00010001 | LEDs=0001 | Z=0 N=0 C=0
+# PC=01 | Instr=00010111 | LEDs=0111 | Z=0 N=0 C=0
+# PC=02 | Instr=00110000 | LEDs=0000 | Z=0 N=0 C=0
+# PC=03 | Instr=00110001 | LEDs=1001 | Z=1 N=0 C=0
+# PC=04 | Instr=00011111 | LEDs=1111 | Z=0 N=1 C=1
+# PC=05 | Instr=00100011 | LEDs=1000 | Z=0 N=0 C=0
+# PC=06 | Instr=11110000 | LEDs=0000 | Z=0 N=0 C=1
+# HALT detected at PC=06, stopping simulation.
+# ** Note: $finish    : C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v(32)
+#    Time: 230 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v line 32
+# Compile of top_tb.v was successful.
+# Compile of alu.v was successful.
+# Compile of control.v was successful.
+# Compile of datapath.v was successful.
+# Compile of memory.v was successful.
+# Compile of registerfile.v was successful.
+# Compile of top.v was successful.
+# 7 compiles, 0 failed with no errors.
+vsim -gui work.top_tb
+# End time: 13:18:19 on Jun 25,2025, Elapsed time: 0:07:49
+# Errors: 0, Warnings: 6
+# vsim -gui work.top_tb 
+# Start time: 13:18:19 on Jun 25,2025
+# Loading work.top_tb
+# Loading work.top
+# Loading work.datapath
+# Loading work.memory
+# Loading work.register_file
+# Loading work.alu
+# Loading work.control
+add wave -position insertpoint sim:/top_tb/*
+run -all
+# PC=00 | Instr=00010001 | LEDs=0001 | Z=0 N=0 C=0
+# PC=00 | Instr=00010001 | LEDs=0001 | Z=0 N=0 C=0
+# PC=00 | Instr=00010001 | LEDs=0001 | Z=0 N=0 C=0
+# PC=00 | Instr=00010001 | LEDs=0001 | Z=0 N=0 C=0
+# PC=00 | Instr=00010001 | LEDs=0001 | Z=0 N=0 C=0
+# PC=00 | Instr=00010001 | LEDs=0001 | Z=0 N=0 C=0
+# PC=01 | Instr=00010111 | LEDs=0111 | Z=0 N=0 C=0
+# PC=02 | Instr=00110000 | LEDs=0000 | Z=0 N=0 C=0
+# PC=03 | Instr=00110001 | LEDs=1001 | Z=1 N=0 C=0
+# PC=04 | Instr=00011111 | LEDs=1111 | Z=0 N=1 C=1
+# PC=05 | Instr=00100011 | LEDs=1000 | Z=0 N=0 C=0
+# PC=06 | Instr=11110000 | LEDs=0000 | Z=0 N=0 C=1
+# HALT detected at PC=06, stopping simulation.
+# ** Note: $finish    : C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v(32)
+#    Time: 230 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at C:/My_FPGA_Projects/Proje2_8bitCPU/sim/top_tb.v line 32

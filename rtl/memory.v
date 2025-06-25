@@ -8,12 +8,12 @@ module memory (
     reg [7:0] mem [0:255];
 
     //add testing
-    initial begin
+    /*initial begin
         mem[0] = 8'b00010001; // LDI R0, 1
         mem[1] = 8'b00010101; // LDI R1, 5
         mem[2] = 8'b00100001; // ADD R0, R1
         mem[3] = 8'b11110000; // HALT
-    end
+    end*/
 
     //branch testing doesn't branch
     /*initial begin
@@ -103,6 +103,18 @@ module memory (
         mem[3] = 8'b00110000; // SUB R0, R0 (result 0 -> Z=1)
         mem[4] = 8'b11110000; // HALT
     end*/
+
+    //N/C flag test
+    initial begin
+        mem[0] = 8'b00010001; // LDI R0, 1       ; R0 = 1
+        mem[1] = 8'b00010111; // LDI R1, 7       ; R1 = 7
+        mem[2] = 8'b00110000; // SUB R0, R0      ; R0 - R0 = 0 → Z=1, N=0, C=0
+        mem[3] = 8'b00110001; // SUB R0, R1      ; 0 - 7 = 249 → Z=0, N=1, C=1
+        mem[4] = 8'b00011111; // LDI R3, 255     ; R3 = 255
+        mem[5] = 8'b00100011; // ADD R3, R0      ; 255 + 249 = overflow → Z=?, N=?, C=1
+        mem[6] = 8'b11110000; // HALT
+    end
+
 
     always @(*) begin
         data_out = mem[addr];
